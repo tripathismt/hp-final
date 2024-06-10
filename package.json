@@ -101,7 +101,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon serve.js",
+    "start": "nodemon server.js",
     "client7":"node client/client7.js",
     "client8":"node client/client8.js",
     "client10":"node client/client10.js",

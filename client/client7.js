@@ -1,10 +1,11 @@
 const http2 = require('http2');
 const { setTimeout } = require('timers/promises');
 const networkHeader = require('../network/n7.json'); // Adjust the path as necessary
+const { exit } = require('process');
 
 const sessionOptions = {
   settings: {
-    maxHeaderListSize: 2 * 1024 * 1024 // 2MB header size limit
+    maxHeaderListSize: 2 * 1024 * 1024 // 1MB header size limit
   }
 };
 
@@ -18,12 +19,12 @@ session.on('close', () => {
   console.log('Session closed');
 });
 
-let interval;
 let requestsMade = 0;
 const maxRequests = 20;
+const maxRetries = 5;
 
 const exponentialBackoff = (attempt) => {
-  return Math.min(1000 * Math.pow(2, attempt), 30000); 
+  return Math.min(1000 * Math.pow(2, attempt), 5000);
 };
 
 const servercall = async (attempt = 0) => {
@@ -40,55 +41,73 @@ const servercall = async (attempt = 0) => {
     'network-info': JSON.stringify(header['network-info']),
   };
 
-  const req = session.request(options);
+  return new Promise((resolve, reject) => {
+    const req = session.request(options);
 
-  req.setEncoding('utf8');
+    req.setEncoding('utf8');
 
-  req.on('response', (headers) => {
-    console.log('Response headers:', headers);
+    req.on('response', (headers) => {
+      console.log('Response headers:', headers);
+    });
+
+    let data = '';
+    req.on('data', (chunk) => {
+      data += chunk;
+    });
+
+    req.on('end', () => {
+      console.log('Response data:', data);
+      console.log('Request ended');
+      // requestsMade++;
+      if (requestsMade >= maxRequests) {
+        session.close((err) => {
+          if (err) {
+            console.error('Error closing session:', err);
+            reject(err);
+          } else {
+            console.log('Session closed after reaching the max requests limit');
+            resolve();
+          }
+        });
+      } else {
+        resolve();
+      }
+    });
+
+    req.on('error', async (err) => {
+      console.error('Request error:', err);
+      if (attempt < maxRetries) {
+        const delay = exponentialBackoff(attempt);
+        console.log(`Retrying request in ${delay}ms (attempt ${attempt + 1})`);
+        await setTimeout(delay);
+        servercall(attempt + 1).then(resolve).catch(reject);
+      } else {
+        console.error('Maximum retries reached. Unable to complete request.');
+        reject(err);
+      }
+    });
+
+    req.on('close', () => {
+      requestsMade++;
+      console.log('Stream closed');
+    });
+
+    // Send the JSON payload
+    req.end(JSON.stringify(header['network-info']));
   });
-
-  let data = '';
-  req.on('data', (chunk) => {
-    data += chunk;
-  });
-
-  req.on('end', () => {
-    console.log('Response data:', data);
-    console.log('Request ended');
-    requestsMade++;
-    if (requestsMade >= maxRequests) {
-      clearInterval(interval);
-      session.close((err) => {
-        if (err) {
-          console.error('Error closing session:', err);
-        }
-      });
-    }
-  });
-
-  req.on('error', async (err) => {
-    console.error('Request error:', err);
-    if (attempt < 5) {
-      const delay = exponentialBackoff(attempt);
-      console.log(`Retrying request in ${delay}ms (attempt ${attempt + 1})`);
-      await setTimeout(delay);
-      servercall(attempt + 1); 
-    } else {
-      console.error('Maximum retries reached. Unable to complete request.');
-    }
-  });
-
-  req.on('close', () => {
-    console.log('Stream closed');
-  });
-
-  // Send the JSON payload
-  req.end(JSON.stringify(header['network-info']));
 };
 
-(async () => {
-  interval = setInterval(async () => {
+const startServerCalls = async () => {
+  for (let i = 0; i < maxRequests; i++) {
     await servercall();
-  }, 1000);
-})();
+    await setTimeout(1000); // Wait for 1 second between each request
+  }
+};
+
+startServerCalls().then(() => {
+  console.log('All requests have been closed.');
+  exit(0);
+}).catch((err) => {
+  console.error('An error occurred:', err);
+  exit(1);
+});

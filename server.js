@@ -1,6 +1,12 @@
 const http2 = require('http2');
 
-const server = http2.createServer();
+const server = http2.createServer(
+  {
+    settings: {
+      maxHeaderListSize: 2 * 1024 * 1024 // 2MB header size limit
+    }
+  }
+);
 
 server.on('error', (err) => {
   console.error('Server error:', err);
