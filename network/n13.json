@@ -1,0 +1,108 @@
+[
+  {
+    ":path": "{apiRoot}/nudm-ueau/v1/{supiOrSuci}/security-information/generate-auth-data",
+    ":method": "POST",
+    "Content-Type": "application/JSON",
+    "network-info": {
+        "supportedFeatures": "string",
+        "servingNetworkName": "string",
+        "resynchronizationInfo": {
+          "rand": "string",
+          "auts": "string"
+        },
+        "ausfInstanceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "cellCagInfo": [
+          "string"
+        ],
+        "n5gcInd": false,
+        "nswoInd": false,
+        "disasterRoamingInd": false,
+        "aun3Ind": false
+      }
+},
+{
+    ":path": "{apiRoot}/nudm-ueau/v1/{supi}/auth-events",
+    ":method": "POST",
+    "Content-Type": "application/JSON",
+    "network-info": {
+        "nfInstanceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "success": true,
+        "timeStamp": "2024-05-05T07:23:13.126Z",
+        "authType": "5G_AKA",
+        "servingNetworkName": "string",
+        "authRemovalInd": false,
+        "nfSetId": "string",
+        "resetIds": [
+          "string"
+        ],
+        "dataRestorationCallbackUri": "string",
+        "udrRestartInd": false
+      }
+},
+{
+    ":path": "{apiRoot}/nudm-ueau/v1/{supi}/hss-security-information/{hssAuthType}/generate-av",
+    ":method": "POST",
+    "Content-Type": "application/JSON",
+    "network-info": {
+        "supportedFeatures": "string",
+        "hssAuthType": "EPS_AKA",
+        "numOfRequestedVectors": 5,
+        "requestingNodeType": "AUSF",
+        "servingNetworkId": {
+          "mcc": "string",
+          "mnc": "string"
+        },
+        "resynchronizationInfo": {
+          "rand": "string",
+          "auts": "string"
+        },
+        "anId": "HRPD"
+      }
+},
+{
+    ":path": "{apiRoot}/nudm-ueau/v1/{supi}/auth-events/{authEventId}",
+    ":method": "PUT",
+    "Content-Type": "application/JSON",
+    "network-info":  {
+        "nfInstanceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "success": true,
+        "timeStamp": "2024-05-05T07:27:38.500Z",
+        "authType": "5G_AKA",
+        "servingNetworkName": "string",
+        "authRemovalInd": false,
+        "nfSetId": "string",
+        "resetIds": [
+          "string"
+        ],
+        "dataRestorationCallbackUri": "string",
+        "udrRestartInd": false
+      } 
+},
+{
+    ":path": "{apiRoot}/nudm-ueau/v1/{supi}/gba-security-information/generate-av",
+    ":method": "POST",
+    "Content-Type": "application/JSON",
+    "network-info":  {
+        "authType": "DIGEST_AKAV1_MD5",
+        "resynchronizationInfo": {
+          "rand": "string",
+          "auts": "string"
+        },
+        "supportedFeatures": "string"
+      }
+},
+{
+    ":path": "{apiRoot}/nudm-ueau/v1/{supiOrSuci}/prose-security-information/generate-av",
+    ":method": "POST",
+    "Content-Type": "application/JSON",
+    "network-info":   {
+        "servingNetworkName": "string",
+        "relayServiceCode": 16777215,
+        "resynchronizationInfo": {
+          "rand": "string",
+          "auts": "string"
+        },
+        "supportedFeatures": "string"
+      }
+}
+]

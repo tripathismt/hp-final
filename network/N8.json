@@ -1,0 +1,229 @@
+[
+  {
+    ":path": "{apiRoot}/nudm-sdm/v1/{supi}/subscriber-data",
+    ":method": "GET",
+    "Content-Type": "application/JSON",
+    "network-info": {
+      "supportedFeatures": "string",
+      "servingNetworkName": "string"
+    }
+  },
+  {
+    ":path": "{apiRoot}/nudm-sdm/v1/{supi}/subscriptions",
+    ":method": "POST",
+    "Content-Type": "application/JSON",
+    "network-info": {
+      "nfInstanceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "success": true,
+      "timeStamp": "2024-05-05T07:27:38.500Z",
+      "authType": "5G_AKA",
+      "servingNetworkName": "string",
+      "authRemovalInd": false,
+      "nfSetId": "string",
+      "resetIds": [
+        "string"
+      ],
+      "dataRestorationCallbackUri": "string",
+      "udrRestartInd": false
+    }
+  },
+  {
+    ":path": "{apiRoot}/nudm-sdm/v1/subscriptions/{subscriptionId}",
+    ":method": "PUT",
+    "Content-Type": "application/JSON",
+    "network-info": {
+      "nfInstanceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "success": true,
+      "timeStamp": "2024-05-05T07:27:38.500Z",
+      "authType": "5G_AKA",
+      "servingNetworkName": "string",
+      "authRemovalInd": false,
+      "nfSetId": "string",
+      "resetIds": [
+        "string"
+      ],
+      "dataRestorationCallbackUri": "string",
+      "udrRestartInd": false
+    }
+  },
+  {
+    ":path": "{apiRoot}/nudm-sdm/v1/subscriptions/{subscriptionId}",
+    ":method": "DELETE",
+    "Content-Type": "application/JSON",
+    "network-info": {
+      "nfInstanceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "success": true,
+      "timeStamp": "2024-05-05T07:27:38.500Z",
+      "authType": "5G_AKA",
+      "servingNetworkName": "string",
+      "authRemovalInd": false,
+      "nfSetId": "string",
+      "resetIds": [
+        "string"
+      ],
+      "dataRestorationCallbackUri": "string",
+      "udrRestartInd": false
+    }
+  },
+  {
+    ":path": "{apiRoot}/nudm-sdm/v1/notifications",
+    ":method": "POST",
+    "Content-Type": "application/JSON",
+    "network-info": {
+      "nfInstanceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "success": true,
+      "timeStamp": "2024-05-05T07:27:38.500Z",
+      "authType": "5G_AKA",
+      "servingNetworkName": "string",
+      "authRemovalInd": false,
+      "nfSetId": "string",
+      "resetIds": [
+        "string"
+      ],
+      "dataRestorationCallbackUri": "string",
+      "udrRestartInd": false
+    }
+  },
+  {
+    ":path": "{apiRoot}/nudm-uecm/v1/{supi}/registration",
+    ":method": "POST",
+    "Content-Type": "application/JSON",
+    "network-info": {
+      "nfInstanceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "success": true,
+      "timeStamp": "2024-05-05T07:27:38.500Z",
+      "authType": "5G_AKA",
+      "servingNetworkName": "string",
+      "authRemovalInd": false,
+      "nfSetId": "string",
+      "resetIds": [
+        "string"
+      ],
+      "dataRestorationCallbackUri": "string",
+      "udrRestartInd": false
+    }
+  },
+  {
+    ":path": "{apiRoot}/nudm-uecm/v1/{supi}/deregistration",
+    ":method": "DELETE",
+    "Content-Type": "application/JSON",
+    "network-info": {
+      "nfInstanceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "success": true,
+      "timeStamp": "2024-05-05T07:27:38.500Z",
+      "authType": "5G_AKA",
+      "servingNetworkName": "string",
+      "authRemovalInd": false,
+      "nfSetId": "string",
+      "resetIds": [
+        "string"
+      ],
+      "dataRestorationCallbackUri": "string",
+      "udrRestartInd": false
+    }
+  },
+  {
+    ":path": "{apiRoot}/nudm-uecm/v1/{supi}/deregistration-notification",
+    ":method": "POST",
+    "Content-Type": "application/JSON",
+    "network-info": {
+      "nfInstanceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "success": true,
+      "timeStamp": "2024-05-05T07:27:38.500Z",
+      "authType": "5G_AKA",
+      "servingNetworkName": "string",
+      "authRemovalInd": false,
+      "nfSetId": "string",
+      "resetIds": [
+        "string"
+      ],
+      "dataRestorationCallbackUri": "string",
+      "udrRestartInd": false
+    }
+  },
+  {
+    ":path": "{apiRoot}/nudm-uecm/v1/{supi}/context",
+    ":method": "GET",
+    "Content-Type": "application/JSON",
+    "network-info": {
+      "supportedFeatures": "string",
+      "servingNetworkName": "string"
+    }
+  },
+  {
+    ":path": "{apiRoot}/nudm-uecm/v1/{supi}/context",
+    ":method": "PUT",
+    "Content-Type": "application/JSON",
+    "network-info": {
+      "nfInstanceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "success": true,
+      "timeStamp": "2024-05-05T07:27:38.500Z",
+      "authType": "5G_AKA",
+      "servingNetworkName": "string",
+      "authRemovalInd": false,
+      "nfSetId": "string",
+      "resetIds": [
+        "string"
+      ],
+      "dataRestorationCallbackUri": "string",
+      "udrRestartInd": false
+    }
+  },
+  {
+    ":path": "{apiRoot}/namf-mt/v1/domain-selection",
+    ":method": "POST",
+    "Content-Type": "application/JSON",
+    "network-info": {
+      "nfInstanceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "success": true,
+      "timeStamp": "2024-05-05T07:27:38.500Z",
+      "authType": "5G_AKA",
+      "servingNetworkName": "string",
+      "authRemovalInd": false,
+      "nfSetId": "string",
+      "resetIds": [
+        "string"
+      ],
+      "dataRestorationCallbackUri": "string",
+      "udrRestartInd": false
+    }
+  },
+  {
+    ":path": "{apiRoot}/namf-location/v1/{supi}/location",
+    ":method": "POST",
+    "Content-Type": "application/JSON",
+    "network-info": {
+      "nfInstanceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "success": true,
+      "timeStamp": "2024-05-05T07:27:38.500Z",
+      "authType": "5G_AKA",
+      "servingNetworkName": "string",
+      "authRemovalInd": false,
+      "nfSetId": "string",
+      "resetIds": [
+        "string"
+      ],
+      "dataRestorationCallbackUri": "string",
+      "udrRestartInd": false
+    }
+  },
+  {
+    ":path": "{apiRoot}/namf-comm/v1/status-change",
+    ":method": "POST",
+    "Content-Type": "application/JSON",
+    "network-info": {
+      "nfInstanceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "success": true,
+      "timeStamp": "2024-05-05T07:27:38.500Z",
+      "authType": "5G_AKA",
+      "servingNetworkName": "string",
+      "authRemovalInd": false,
+      "nfSetId": "string",
+      "resetIds": [
+        "string"
+      ],
+      "dataRestorationCallbackUri": "string",
+      "udrRestartInd": false
+    }
+  }
+]

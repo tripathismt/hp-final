@@ -1,0 +1,163 @@
+[
+  {
+    ":path": "{apiRoot}/npcf-smpolicycontrol/v1/sm-policies",
+    ":method": "POST",
+    "Content-Type": "application/json",
+    "network-info": {
+        "accNetChId": {
+          "accNetChargId": "string",
+          "refPccRuleIds": [
+            "string"
+          ],
+          "sessionChScope": true
+        },
+        "chargEntityAddr": {
+          "anChargIpv4Addr": "198.51.100.1",
+          "anChargIpv6Addr": "2001:db8:85a3::8a2e:370:7334"
+        },
+        "gpsi": "string",
+        "supi": "string",
+        "invalidSupi": true,
+        "interGrpIds": [
+          "string"
+        ],
+        "pduSessionId": 255,
+        "pduSessionType": "IPV4",
+        "chargingcharacteristics": "string",
+        "dnn": "string",
+        "dnnSelMode": "VERIFIED",
+        "notificationUri": "string",
+        "accessType": "3GPP_ACCESS",
+        "ratType": "NR",
+        "addAccessInfo": {
+          "accessType": "3GPP_ACCESS",
+          "ratType": "NR"
+        },
+        "servingNetwork": {
+          "mcc": "string",
+          "mnc": "string",
+          "nid": "string"
+        }
+      }
+},
+{
+    ":path": "{apiRoot}/npcf-smpolicycontrol/v1/sm-policies/{smPolicyId}/update",
+    ":method": "POST",
+    "Content-Type": "application/json",
+    "network-info": {
+        "repPolicyCtrlReqTriggers": [
+          "PLMN_CH",
+          "string"
+        ],
+        "accNetChIds": [
+          {
+            "accNetChargId": "string",
+            "refPccRuleIds": [
+              "string"
+            ],
+            "sessionChScope": true
+          },
+          {
+            "accNetChargId": "string",
+            "refPccRuleIds": [
+              "string"
+            ],
+            "sessionChScope": true
+          }
+        ],
+        "accessType": "3GPP_ACCESS",
+        "ratType": "NR",
+        "addAccessInfo": {
+          "accessType": "3GPP_ACCESS",
+          "ratType": "NR"
+        },
+        "relAccessInfo": {
+          "accessType": "3GPP_ACCESS",
+          "ratType": "NR"
+        },
+        "servingNetwork": {
+          "mcc": "string",
+          "mnc": "string",
+          "nid": "string"
+        },
+        "userLocationInfo": {
+          "eutraLocation": {
+            "tai": {
+              "plmnId": {
+                "mcc": "string",
+                "mnc": "string"
+              },
+              "tac": "string",
+              "nid": "string"
+            }
+          }
+        }
+      }
+    },
+{
+    ":path": "{apiRoot}/npcf-smpolicycontrol/v1/sm-policies/{smPolicyId}/delete",
+    ":method": "POST",
+    "Content-Type": "application/json",
+    "network-info": {
+        "userLocationInfo": {
+          "eutraLocation": {
+            "tai": {
+              "plmnId": {
+                "mcc": "string",
+                "mnc": "string"
+              },
+              "tac": "string",
+              "nid": "string"
+            },
+            "ignoreTai": false,
+            "ecgi": {
+              "plmnId": {
+                "mcc": "string",
+                "mnc": "string"
+              },
+              "eutraCellId": "string",
+              "nid": "string"
+            },
+            "ignoreEcgi": false,
+            "ageOfLocationInformation": 32767,
+            "ueLocationTimestamp": "2024-05-05T07:15:42.321Z",
+            "geographicalInformation": "string",
+            "geodeticInformation": "string",
+            "globalNgenbId": {
+              "plmnId": {
+                "mcc": "string",
+                "mnc": "string"
+              },
+              "n3IwfId": "string",
+              "gNbId": {
+                "bitLength": 32,
+                "gNBValue": "string"
+              },
+              "ngeNbId": "SMacroNGeNB-34B89",
+              "wagfId": "string",
+              "tngfId": "string",
+              "nid": "string",
+              "eNbId": "string"
+            },
+            "globalENbId": {
+              "plmnId": {
+                "mcc": "string",
+                "mnc": "string"
+              },
+              "n3IwfId": "string",
+              "gNbId": {
+                "bitLength": 32,
+                "gNBValue": "string"
+              },
+              "ngeNbId": "SMacroNGeNB-34B89",
+              "wagfId": "string",
+              "tngfId": "string",
+              "nid": "string",
+              "eNbId": "string"
+            }
+          }
+        }
+      }
+          
+}
+]

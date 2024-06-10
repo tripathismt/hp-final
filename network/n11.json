@@ -1,0 +1,4881 @@
+[
+    {
+        ":path": "{apiRoot}/nsmf-pdusession/v1/sm-contexts/{smContextRef}/retrieve",
+        ":method": "POST",
+        "Content-Type": "application/JSON",
+        "network-info": {
+          "targetMmeCap": {
+            "nonIpSupported": false,
+            "ethernetSupported": false,
+            "upipSupported": false
+          },
+          "smContextType": "EPS_PDN_CONNECTION",
+          "servingNetwork": {
+            "mcc": "string",
+            "mnc": "string"
+          },
+          "notToTransferEbiList": [
+            15
+          ],
+          "ranUnchangedInd": false,
+          "hrsboSupportInd": false,
+          "storedOffloadIds": [
+            "string"
+          ]
+        }
+      },
+      {
+        ":path": "{apiRoot}/nsmf-pdusession/v1/sm-contexts/{smContextRef}/modify",
+        ":method": "POST",
+        "Content-Type": "application/JSON",
+        "network-info":{
+          "pei": "string",
+          "servingNfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "guami": {
+            "plmnId": {
+              "mcc": "string",
+              "mnc": "string",
+              "nid": "string"
+            },
+            "amfId": "string"
+          },
+          "servingNetwork": {
+            "mcc": "string",
+            "mnc": "string",
+            "nid": "string"
+          },
+          "backupAmfInfo": [
+            {
+              "backupAmf": "string",
+              "guamiList": [
+                {
+                  "plmnId": {
+                    "mcc": "string",
+                    "mnc": "string",
+                    "nid": "string"
+                  },
+                  "amfId": "string"
+                }
+              ]
+            }
+          ],
+          "anType": "3GPP_ACCESS",
+          "additionalAnType": "3GPP_ACCESS",
+          "anTypeToReactivate": "3GPP_ACCESS",
+          "ratType": "NR",
+          "presenceInLadn": "IN_AREA",
+          "ueLocation": {
+            "eutraLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ignoreTai": false,
+              "ecgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "eutraCellId": "string",
+                "nid": "string"
+              },
+              "ignoreEcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:49:28.680Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalNgenbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "globalENbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              }
+            },
+            "nrLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ncgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "nrCellId": "string",
+                "nid": "string"
+              },
+              "ignoreNcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:49:28.680Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalGnbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "ntnTaiInfo": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string",
+                  "nid": "string"
+                },
+                "tacList": [
+                  "string"
+                ],
+                "derivedTac": "string"
+              }
+            },
+            "n3gaLocation": {
+              "n3gppTai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "n3IwfId": "string",
+              "ueIpv4Addr": "198.51.100.1",
+              "ueIpv6Addr": "2001:db8:85a3::8a2e:370:7334",
+              "portNumber": 0,
+              "protocol": "UDP",
+              "tnapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "twapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "hfcNodeId": {
+                "hfcNId": "string"
+              },
+              "gli": "string",
+              "w5gbanLineType": "DSL",
+              "gci": "string"
+            },
+            "utraLocation": {
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:49:28.680Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            },
+            "geraLocation": {
+              "locationNumber": "string",
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "vlrNumber": "string",
+              "mscNumber": "string",
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:49:28.680Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            }
+          },
+          "ueTimeZone": "-08:00+1",
+          "addUeLocation": {
+            "eutraLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ignoreTai": false,
+              "ecgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "eutraCellId": "string",
+                "nid": "string"
+              },
+              "ignoreEcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:49:28.680Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalNgenbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "globalENbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              }
+            },
+            "nrLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ncgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "nrCellId": "string",
+                "nid": "string"
+              },
+              "ignoreNcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:49:28.680Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalGnbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "ntnTaiInfo": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string",
+                  "nid": "string"
+                },
+                "tacList": [
+                  "string"
+                ],
+                "derivedTac": "string"
+              }
+            },
+            "n3gaLocation": {
+              "n3gppTai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "n3IwfId": "string",
+              "ueIpv4Addr": "198.51.100.1",
+              "ueIpv6Addr": "2001:db8:85a3::8a2e:370:7334",
+              "portNumber": 0,
+              "protocol": "UDP",
+              "tnapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "twapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "hfcNodeId": {
+                "hfcNId": "string"
+              },
+              "gli": "string",
+              "w5gbanLineType": "DSL",
+              "gci": "string"
+            },
+            "utraLocation": {
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:49:28.680Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            },
+            "geraLocation": {
+              "locationNumber": "string",
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "vlrNumber": "string",
+              "mscNumber": "string",
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:49:28.680Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            }
+          },
+          "upCnxState": "ACTIVATED",
+          "hoState": "NONE",
+          "toBeSwitched": false,
+          "failedToBeSwitched": true,
+          "n1SmMsg": {
+            "contentId": "string"
+          },
+          "n2SmInfo": {
+            "contentId": "string"
+          },
+          "n2SmInfoType": "PDU_RES_SETUP_REQ",
+          "targetId": {
+            "ranNodeId": {
+              "plmnId": {
+                "mcc": "string",
+                "mnc": "string"
+              },
+              "n3IwfId": "string",
+              "gNbId": {
+                "bitLength": 32,
+                "gNBValue": "string"
+              },
+              "ngeNbId": "SMacroNGeNB-34B89",
+              "wagfId": "string",
+              "tngfId": "string",
+              "nid": "string",
+              "eNbId": "string"
+            },
+            "tai": {
+              "plmnId": {
+                "mcc": "string",
+                "mnc": "string"
+              },
+              "tac": "string",
+              "nid": "string"
+            }
+          },
+          "targetServingNfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "smContextStatusUri": "string",
+          "dataForwarding": false,
+          "n9ForwardingTunnel": {
+            "ipv4Addr": "198.51.100.1",
+            "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+            "gtpTeid": "string",
+            "anType": "3GPP_ACCESS"
+          },
+          "n9DlForwardingTnlList": [
+            {
+              "ipv4Addr": "198.51.100.1",
+              "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+              "gtpTeid": "string",
+              "drbId": 32,
+              "additionalTnlNb": 3
+            }
+          ],
+          "n9UlForwardingTnlList": [
+            {
+              "ipv4Addr": "198.51.100.1",
+              "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+              "gtpTeid": "string",
+              "drbId": 32,
+              "additionalTnlNb": 3
+            }
+          ],
+          "n9DlForwardingTunnel": {
+            "ipv4Addr": "198.51.100.1",
+            "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+            "gtpTeid": "string",
+            "anType": "3GPP_ACCESS"
+          },
+          "n9InactivityTimer": 0,
+          "epsBearerSetup": [
+            "string"
+          ],
+          "revokeEbiList": [
+            15
+          ],
+          "release": false,
+          "cause": "REL_DUE_TO_HO",
+          "ngApCause": {
+            "group": 0,
+            "value": 0
+          },
+          "5gMmCauseValue": 0,
+          "sNssai": {
+            "sst": 255,
+            "sd": "string"
+          },
+          "traceData": {
+            "traceRef": "string",
+            "traceDepth": "MINIMUM",
+            "neTypeList": "string",
+            "eventList": "string",
+            "collectionEntityIpv4Addr": "198.51.100.1",
+            "collectionEntityIpv6Addr": "2001:db8:85a3::8a2e:370:7334",
+            "interfaceList": "string"
+          },
+          "epsInterworkingInd": "NONE",
+          "anTypeCanBeChanged": false,
+          "n2SmInfoExt1": {
+            "contentId": "string"
+          },
+          "n2SmInfoTypeExt1": "PDU_RES_SETUP_REQ",
+          "maReleaseInd": "REL_MAPDU_OVER_3GPP",
+          "maNwUpgradeInd": false,
+          "maRequestInd": false,
+          "n3gPathSwitchExecutionInd": true,
+          "exemptionInd": {
+            "dnnCongestion": false,
+            "snssaiOnlyCongestion": false,
+            "snssaiDnnCongestion": false
+          },
+          "supportedFeatures": "string",
+          "moExpDataCounter": {
+            "counter": 0,
+            "timeStamp": "2024-05-04T15:49:28.680Z"
+          },
+          "extendedNasSmTimerInd": true,
+          "forwardingFTeid": "string",
+          "forwardingBearerContexts": [
+            "string"
+          ],
+          "ddnFailureSubs": {
+            "ddnFailureSubsInd": false,
+            "ddnFailureSubsInfoList": [
+              {
+                "notifyCorrelationId": "string",
+                "dddTrafficDescriptorList": [
+                  {
+                    "ipv4Addr": "198.51.100.1",
+                    "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                    "portNumber": 0,
+                    "macAddr": "string"
+                  }
+                ]
+              }
+            ]
+          },
+          "skipN2PduSessionResRelInd": false,
+          "secondaryRatUsageDataReportContainer": [
+            "string"
+          ],
+          "smPolicyNotifyInd": true,
+          "pcfUeCallbackInfo": {
+            "callbackUri": "string",
+            "bindingInfo": "string"
+          },
+          "satelliteBackhaulCat": "GEO",
+          "cnBasedMt": true,
+          "geoSatelliteId": "string",
+          "altSnssai": {
+            "sst": 255,
+            "sd": "string"
+          },
+          "altHplmnSnssai": {
+            "sst": 255,
+            "sd": "string"
+          }    
+        }
+      },
+      {
+        ":path": "{apiRoot}/nsmf-pdusession/v1//sm-contexts/{smContextRef}/release",
+        ":method": "POST",
+        "Content-Type": "application/JSON",
+        "network-info":{
+          "cause": "REL_DUE_TO_HO",
+          "ngApCause": {
+            "group": 0,
+            "value": 0
+          },
+          "5gMmCauseValue": 0,
+          "ueLocation": {
+            "eutraLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ignoreTai": false,
+              "ecgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "eutraCellId": "string",
+                "nid": "string"
+              },
+              "ignoreEcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:50:35.164Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalNgenbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "globalENbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              }
+            },
+            "nrLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ncgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "nrCellId": "string",
+                "nid": "string"
+              },
+              "ignoreNcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:50:35.164Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalGnbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "ntnTaiInfo": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string",
+                  "nid": "string"
+                },
+                "tacList": [
+                  "string"
+                ],
+                "derivedTac": "string"
+              }
+            },
+            "n3gaLocation": {
+              "n3gppTai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "n3IwfId": "string",
+              "ueIpv4Addr": "198.51.100.1",
+              "ueIpv6Addr": "2001:db8:85a3::8a2e:370:7334",
+              "portNumber": 0,
+              "protocol": "UDP",
+              "tnapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "twapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "hfcNodeId": {
+                "hfcNId": "string"
+              },
+              "gli": "string",
+              "w5gbanLineType": "DSL",
+              "gci": "string"
+            },
+            "utraLocation": {
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:50:35.164Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            },
+            "geraLocation": {
+              "locationNumber": "string",
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "vlrNumber": "string",
+              "mscNumber": "string",
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:50:35.164Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            }
+          },
+          "ueTimeZone": "-08:00+1",
+          "addUeLocation": {
+            "eutraLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ignoreTai": false,
+              "ecgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "eutraCellId": "string",
+                "nid": "string"
+              },
+              "ignoreEcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:50:35.164Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalNgenbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "globalENbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              }
+            },
+            "nrLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ncgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "nrCellId": "string",
+                "nid": "string"
+              },
+              "ignoreNcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:50:35.164Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalGnbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "ntnTaiInfo": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string",
+                  "nid": "string"
+                },
+                "tacList": [
+                  "string"
+                ],
+                "derivedTac": "string"
+              }
+            },
+            "n3gaLocation": {
+              "n3gppTai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "n3IwfId": "string",
+              "ueIpv4Addr": "198.51.100.1",
+              "ueIpv6Addr": "2001:db8:85a3::8a2e:370:7334",
+              "portNumber": 0,
+              "protocol": "UDP",
+              "tnapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "twapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "hfcNodeId": {
+                "hfcNId": "string"
+              },
+              "gli": "string",
+              "w5gbanLineType": "DSL",
+              "gci": "string"
+            },
+            "utraLocation": {
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:50:35.164Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            },
+            "geraLocation": {
+              "locationNumber": "string",
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "vlrNumber": "string",
+              "mscNumber": "string",
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:50:35.164Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            }
+          },
+          "vsmfReleaseOnly": false,
+          "n2SmInfo": {
+            "contentId": "string"
+          },
+          "n2SmInfoType": "PDU_RES_SETUP_REQ",
+          "ismfReleaseOnly": false
+        }
+      },
+      {
+        ":path": "{apiRoot}/nsmf-pdusession/v1/pdu-sessions",
+        ":method": "POST",
+        "Content-Type": "application/JSON",
+        "network-info":{
+          "supi": "string",
+          "unauthenticatedSupi": false,
+          "pei": "string",
+          "pduSessionId": 255,
+          "dnn": "string",
+          "selectedDnn": "string",
+          "sNssai": {
+            "sst": 255,
+            "sd": "string"
+          },
+          "altSnssai": {
+            "sst": 255,
+            "sd": "string"
+          },
+          "hplmnSnssai": {
+            "sst": 255,
+            "sd": "string"
+          },
+          "vsmfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "ismfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "servingNetwork": {
+            "mcc": "string",
+            "mnc": "string",
+            "nid": "string"
+          },
+          "requestType": "INITIAL_REQUEST",
+          "epsBearerId": [
+            15
+          ],
+          "pgwS8cFteid": "string",
+          "vsmfPduSessionUri": "string",
+          "ismfPduSessionUri": "string",
+          "vcnTunnelInfo": {
+            "ipv4Addr": "198.51.100.1",
+            "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+            "gtpTeid": "string",
+            "anType": "3GPP_ACCESS"
+          },
+          "icnTunnelInfo": {
+            "ipv4Addr": "198.51.100.1",
+            "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+            "gtpTeid": "string",
+            "anType": "3GPP_ACCESS"
+          },
+          "n9ForwardingTunnelInfo": {
+            "ipv4Addr": "198.51.100.1",
+            "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+            "gtpTeid": "string",
+            "anType": "3GPP_ACCESS"
+          },
+          "additionalCnTunnelInfo": {
+            "ipv4Addr": "198.51.100.1",
+            "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+            "gtpTeid": "string",
+            "anType": "3GPP_ACCESS"
+          },
+          "anType": "3GPP_ACCESS",
+          "additionalAnType": "3GPP_ACCESS",
+          "ratType": "NR",
+          "ueLocation": {
+            "eutraLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ignoreTai": false,
+              "ecgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "eutraCellId": "string",
+                "nid": "string"
+              },
+              "ignoreEcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:52:32.748Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalNgenbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "globalENbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              }
+            },
+            "nrLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ncgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "nrCellId": "string",
+                "nid": "string"
+              },
+              "ignoreNcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:52:32.748Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalGnbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "ntnTaiInfo": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string",
+                  "nid": "string"
+                },
+                "tacList": [
+                  "string"
+                ],
+                "derivedTac": "string"
+              }
+            },
+            "n3gaLocation": {
+              "n3gppTai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "n3IwfId": "string",
+              "ueIpv4Addr": "198.51.100.1",
+              "ueIpv6Addr": "2001:db8:85a3::8a2e:370:7334",
+              "portNumber": 0,
+              "protocol": "UDP",
+              "tnapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "twapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "hfcNodeId": {
+                "hfcNId": "string"
+              },
+              "gli": "string",
+              "w5gbanLineType": "DSL",
+              "gci": "string"
+            },
+            "utraLocation": {
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:52:32.748Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            },
+            "geraLocation": {
+              "locationNumber": "string",
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "vlrNumber": "string",
+              "mscNumber": "string",
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:52:32.748Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            }
+          },
+          "ueTimeZone": "-08:00+1",
+          "addUeLocation": {
+            "eutraLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ignoreTai": false,
+              "ecgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "eutraCellId": "string",
+                "nid": "string"
+              },
+              "ignoreEcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:52:32.748Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalNgenbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "globalENbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              }
+            },
+            "nrLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ncgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "nrCellId": "string",
+                "nid": "string"
+              },
+              "ignoreNcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:52:32.748Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalGnbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "ntnTaiInfo": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string",
+                  "nid": "string"
+                },
+                "tacList": [
+                  "string"
+                ],
+                "derivedTac": "string"
+              }
+            },
+            "n3gaLocation": {
+              "n3gppTai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "n3IwfId": "string",
+              "ueIpv4Addr": "198.51.100.1",
+              "ueIpv6Addr": "2001:db8:85a3::8a2e:370:7334",
+              "portNumber": 0,
+              "protocol": "UDP",
+              "tnapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "twapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "hfcNodeId": {
+                "hfcNId": "string"
+              },
+              "gli": "string",
+              "w5gbanLineType": "DSL",
+              "gci": "string"
+            },
+            "utraLocation": {
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:52:32.748Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            },
+            "geraLocation": {
+              "locationNumber": "string",
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "vlrNumber": "string",
+              "mscNumber": "string",
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:52:32.748Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            }
+          },
+          "gpsi": "string",
+          "n1SmInfoFromUe": {
+            "contentId": "string"
+          },
+          "unknownN1SmInfo": {
+            "contentId": "string"
+          },
+          "supportedFeatures": "string",
+          "hPcfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "pcfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "pcfGroupId": "string",
+          "pcfSetId": "string",
+          "hoPreparationIndication": true,
+          "selMode": "VERIFIED",
+          "alwaysOnRequested": false,
+          "udmGroupId": "string",
+          "routingIndicator": "string",
+          "hNwPubKeyId": 0,
+          "epsInterworkingInd": "NONE",
+          "vSmfServiceInstanceId": "string",
+          "iSmfServiceInstanceId": "string",
+          "recoveryTime": "2024-05-04T15:52:32.748Z",
+          "roamingChargingProfile": {
+            "triggers": [
+              {
+                "triggerType": "QUOTA_THRESHOLD",
+                "triggerCategory": "IMMEDIATE_REPORT",
+                "timeLimit": 0,
+                "volumeLimit": 4294967295,
+                "volumeLimit64": 18446744073709552000,
+                "eventLimit": 4294967295,
+                "maxNumberOfccc": 4294967295,
+                "tariffTimeChange": "2024-05-04T15:52:32.748Z"
+              }
+            ],
+            "partialRecordMethod": "DEFAULT"
+          },
+          "chargingId": "string",
+          "smfChargingId": "string",
+          "oldPduSessionId": 255,
+          "epsBearerCtxStatus": "string",
+          "amfNfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "guami": {
+            "plmnId": {
+              "mcc": "string",
+              "mnc": "string",
+              "nid": "string"
+            },
+            "amfId": "string"
+          },
+          "maxIntegrityProtectedDataRateUl": "64_KBPS",
+          "maxIntegrityProtectedDataRateDl": "64_KBPS",
+          "cpCiotEnabled": false,
+          "cpOnlyInd": false,
+          "invokeNef": false,
+          "maRequestInd": false,
+          "maNwUpgradeInd": false,
+          "dnaiList": [
+            "string"
+          ],
+          "presenceInLadn": "IN_AREA",
+          "secondaryRatUsageInfo": [
+            {
+              "secondaryRatType": "NR",
+              "qosFlowsUsageData": [
+                {
+                  "qfi": 63,
+                  "startTimeStamp": "2024-05-04T15:52:32.748Z",
+                  "endTimeStamp": "2024-05-04T15:52:32.748Z",
+                  "downlinkVolume": 0,
+                  "uplinkVolume": 0
+                }
+              ],
+              "pduSessionUsageData": [
+                {
+                  "startTimeStamp": "2024-05-04T15:52:32.748Z",
+                  "endTimeStamp": "2024-05-04T15:52:32.748Z",
+                  "downlinkVolume": 0,
+                  "uplinkVolume": 0
+                }
+              ]
+            }
+          ],
+          "smallDataRateStatus": {
+            "remainPacketsUl": 0,
+            "remainPacketsDl": 0,
+            "validityTime": "2024-05-04T15:52:32.748Z",
+            "remainExReportsUl": 0,
+            "remainExReportsDl": 0
+          },
+          "apnRateStatus": {
+            "remainPacketsUl": 0,
+            "remainPacketsDl": 0,
+            "validityTime": "2024-05-04T15:52:32.748Z",
+            "remainExReportsUl": 0,
+            "remainExReportsDl": 0
+          },
+          "dlServingPlmnRateCtl": 10,
+          "upSecurityInfo": {
+            "upSecurity": {
+              "upIntegr": "REQUIRED",
+              "upConfid": "REQUIRED"
+            },
+            "maxIntegrityProtectedDataRateUl": "64_KBPS",
+            "maxIntegrityProtectedDataRateDl": "64_KBPS",
+            "securityResult": {
+              "integrityProtectionResult": "PERFORMED",
+              "confidentialityProtectionResult": "PERFORMED"
+            }
+          },
+          "vplmnQos": {
+            "5qi": 255,
+            "arp": {
+              "priorityLevel": 15,
+              "preemptCap": "NOT_PREEMPT",
+              "preemptVuln": "NOT_PREEMPTABLE"
+            },
+            "sessionAmbr": {
+              "uplink": "string",
+              "downlink": "string"
+            },
+            "maxFbrDl": "string",
+            "maxFbrUl": "string",
+            "guaFbrDl": "string",
+            "guaFbrUl": "string",
+            "5qiPL": 127
+          },
+          "oldSmContextRef": "string",
+          "redundantPduSessionInfo": {
+            "rsn": "V1",
+            "pduSessionPairId": 255
+          },
+          "oldPduSessionRef": "string",
+          "smPolicyNotifyInd": false,
+          "pcfUeCallbackInfo": {
+            "callbackUri": "string",
+            "bindingInfo": "string"
+          },
+          "satelliteBackhaulCat": "GEO",
+          "upipSupported": false,
+          "upCnxState": "ACTIVATED",
+          "disasterRoamingInd": false,
+          "hrsboInfo": {
+            "hrsboAuthReqInd": true,
+            "vEasdfAddr": {
+              "ipv4Addr": "198.51.100.1",
+              "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+              "ipv6Prefix": "2001:db8:abcd:12::0/64"
+            },
+            "localDnsAddr": {
+              "ipv4Addr": "198.51.100.1",
+              "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+              "ipv6Prefix": "2001:db8:abcd:12::0/64"
+            },
+            "easRediscoveryInd": true,
+            "easInfoToRefresh": {
+              "ipv4AddressRanges": [
+                {
+                  "start": "198.51.100.1",
+                  "end": "198.51.100.1"
+                }
+              ],
+              "ipv6AddressRanges": [
+                {
+                  "start": "2001:db8:85a3::8a2e:370:7334",
+                  "end": "2001:db8:85a3::8a2e:370:7334"
+                }
+              ],
+              "fqdnList": [
+                "string"
+              ]
+            },
+            "storedOffloadIds": [
+              "string"
+            ]
+          },
+          "ecsAddrConfigInfos": [
+            {
+              "ecsServerAddr": {
+                "ecsFqdnList": [
+                  "string"
+                ],
+                "ecsIpAddressList": [
+                  {
+                    "ipv4Addr": "198.51.100.1",
+                    "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                    "ipv6Prefix": "2001:db8:abcd:12::0/64"
+                  },
+                  {
+                    "ipv4Addr": "198.51.100.1",
+                    "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                    "ipv6Prefix": "2001:db8:abcd:12::0/64"
+                  },
+                  {
+                    "ipv4Addr": "198.51.100.1",
+                    "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                    "ipv6Prefix": "2001:db8:abcd:12::0/64"
+                  }
+                ],
+                "ecsUriList": [
+                  "string"
+                ],
+                "ecsProviderId": "string"
+              },
+              "spatialValidityCond": {
+                "trackingAreaList": [
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "tac": "string",
+                    "nid": "string"
+                  }
+                ],
+                "countries": [
+                  "string"
+                ],
+                "geographicalServiceArea": {
+                  "geographicAreaList": [
+                    {
+                      "shape": "POINT",
+                      "point": {
+                        "lon": 180,
+                        "lat": 90
+                      }
+                    },
+                    {
+                      "shape": "POINT",
+                      "point": {
+                        "lon": 180,
+                        "lat": 90
+                      },
+                      "uncertainty": 0
+                    },
+                    {
+                      "shape": "POINT",
+                      "point": {
+                        "lon": 180,
+                        "lat": 90
+                      },
+                      "uncertaintyEllipse": {
+                        "semiMajor": 0,
+                        "semiMinor": 0,
+                        "orientationMajor": 180
+                      },
+                      "confidence": 100
+                    },
+                    {
+                      "shape": "POINT",
+                      "pointList": [
+                        {
+                          "lon": 180,
+                          "lat": 90
+                        },
+                        {
+                          "lon": 180,
+                          "lat": 90
+                        },
+                        {
+                          "lon": 180,
+                          "lat": 90
+                        }
+                      ]
+                    },
+                    {
+                      "shape": "POINT",
+                      "point": {
+                        "lon": 180,
+                        "lat": 90
+                      },
+                      "altitude": 32767
+                    },
+                    {
+                      "shape": "POINT",
+                      "point": {
+                        "lon": 180,
+                        "lat": 90
+                      },
+                      "altitude": 32767,
+                      "uncertaintyEllipse": {
+                        "semiMajor": 0,
+                        "semiMinor": 0,
+                        "orientationMajor": 180
+                      },
+                      "uncertaintyAltitude": 0,
+                      "confidence": 100
+                    },
+                    {
+                      "shape": "POINT",
+                      "point": {
+                        "lon": 180,
+                        "lat": 90
+                      },
+                      "innerRadius": 327675,
+                      "uncertaintyRadius": 0,
+                      "offsetAngle": 360,
+                      "includedAngle": 360,
+                      "confidence": 100
+                    }
+                  ],
+                  "civicAddressList": [
+                    {
+                      "country": "string",
+                      "A1": "string",
+                      "A2": "string",
+                      "A3": "string",
+                      "A4": "string",
+                      "A5": "string",
+                      "A6": "string",
+                      "PRD": "string",
+                      "POD": "string",
+                      "STS": "string",
+                      "HNO": "string",
+                      "HNS": "string",
+                      "LMK": "string",
+                      "LOC": "string",
+                      "NAM": "string",
+                      "PC": "string",
+                      "BLD": "string",
+                      "UNIT": "string",
+                      "FLR": "string",
+                      "ROOM": "string",
+                      "PLC": "string",
+                      "PCN": "string",
+                      "POBOX": "string",
+                      "ADDCODE": "string",
+                      "SEAT": "string",
+                      "RD": "string",
+                      "RDSEC": "string",
+                      "RDBR": "string",
+                      "RDSUBBR": "string",
+                      "PRM": "string",
+                      "POM": "string",
+                      "usageRules": "string",
+                      ":method": "string",
+                      "providedBy": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "pduSetSupportInd": false,
+          "ecnMarkingCongestionInfoStatus": [
+            {
+              "qfi": 63,
+              "activationStatus": "ACTIVE"
+            }
+          ]
+        }
+      },
+      {
+        ":path": "{apiRoot}/nsmf-pdusession/v1/pdu-sessions/{pduSessionRef}/modify",
+        ":method": "POST",
+        "Content-Type": "application/JSON",
+        "network-info":{
+          "requestIndication": "UE_REQ_PDU_SES_MOD",
+          "pei": "string",
+          "vcnTunnelInfo": {
+            "ipv4Addr": "198.51.100.1",
+            "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+            "gtpTeid": "string",
+            "anType": "3GPP_ACCESS"
+          },
+          "icnTunnelInfo": {
+            "ipv4Addr": "198.51.100.1",
+            "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+            "gtpTeid": "string",
+            "anType": "3GPP_ACCESS"
+          },
+          "additionalCnTunnelInfo": {
+            "ipv4Addr": "198.51.100.1",
+            "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+            "gtpTeid": "string",
+            "anType": "3GPP_ACCESS"
+          },
+          "servingNetwork": {
+            "mcc": "string",
+            "mnc": "string",
+            "nid": "string"
+          },
+          "anType": "3GPP_ACCESS",
+          "additionalAnType": "3GPP_ACCESS",
+          "ratType": "NR",
+          "ueLocation": {
+            "eutraLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ignoreTai": false,
+              "ecgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "eutraCellId": "string",
+                "nid": "string"
+              },
+              "ignoreEcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:53:57.515Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalNgenbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "globalENbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              }
+            },
+            "nrLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ncgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "nrCellId": "string",
+                "nid": "string"
+              },
+              "ignoreNcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:53:57.515Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalGnbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "ntnTaiInfo": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string",
+                  "nid": "string"
+                },
+                "tacList": [
+                  "string"
+                ],
+                "derivedTac": "string"
+              }
+            },
+            "n3gaLocation": {
+              "n3gppTai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "n3IwfId": "string",
+              "ueIpv4Addr": "198.51.100.1",
+              "ueIpv6Addr": "2001:db8:85a3::8a2e:370:7334",
+              "portNumber": 0,
+              "protocol": "UDP",
+              "tnapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "twapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "hfcNodeId": {
+                "hfcNId": "string"
+              },
+              "gli": "string",
+              "w5gbanLineType": "DSL",
+              "gci": "string"
+            },
+            "utraLocation": {
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:53:57.515Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            },
+            "geraLocation": {
+              "locationNumber": "string",
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "vlrNumber": "string",
+              "mscNumber": "string",
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:53:57.515Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            }
+          },
+          "ueTimeZone": "-08:00+1",
+          "addUeLocation": {
+            "eutraLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ignoreTai": false,
+              "ecgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "eutraCellId": "string",
+                "nid": "string"
+              },
+              "ignoreEcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:53:57.515Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalNgenbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "globalENbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              }
+            },
+            "nrLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ncgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "nrCellId": "string",
+                "nid": "string"
+              },
+              "ignoreNcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:53:57.515Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalGnbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "ntnTaiInfo": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string",
+                  "nid": "string"
+                },
+                "tacList": [
+                  "string"
+                ],
+                "derivedTac": "string"
+              }
+            },
+            "n3gaLocation": {
+              "n3gppTai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "n3IwfId": "string",
+              "ueIpv4Addr": "198.51.100.1",
+              "ueIpv6Addr": "2001:db8:85a3::8a2e:370:7334",
+              "portNumber": 0,
+              "protocol": "UDP",
+              "tnapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "twapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "hfcNodeId": {
+                "hfcNId": "string"
+              },
+              "gli": "string",
+              "w5gbanLineType": "DSL",
+              "gci": "string"
+            },
+            "utraLocation": {
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:53:57.515Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            },
+            "geraLocation": {
+              "locationNumber": "string",
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "vlrNumber": "string",
+              "mscNumber": "string",
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:53:57.515Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            }
+          },
+          "pauseCharging": true,
+          "pti": 255,
+          "n1SmInfoFromUe": {
+            "contentId": "string"
+          },
+          "unknownN1SmInfo": {
+            "contentId": "string"
+          },
+          "qosFlowsRelNotifyList": [
+            {
+              "qfi": 63,
+              "cause": "REL_DUE_TO_HO",
+              "currentQosProfileIndex": 8,
+              "nullQoSProfileIndex": true,
+              "ngApCause": {
+                "group": 0,
+                "value": 0
+              }
+            }
+          ],
+          "qosFlowsVsmfRejectedList": [
+            63
+          ],
+          "qosFlowsNotifyList": [
+            {
+              "qfi": 63,
+              "notificationCause": "QOS_FULFILLED",
+              "currentQosProfileIndex": 8,
+              "nullQoSProfileIndex": true
+            }
+          ],
+          "NotifyList": [
+            {
+              "notificationCause": "QOS_FULFILLED"
+            }
+          ],
+          "epsBearerId": [
+            15
+          ],
+          "hoPreparationIndication": true,
+          "revokeEbiList": [
+            15
+          ],
+          "cause": "REL_DUE_TO_HO",
+          "ngApCause": {
+            "group": 0,
+            "value": 0
+          },
+          "5gMmCauseValue": 0,
+          "alwaysOnRequested": false,
+          "epsInterworkingInd": "NONE",
+          "secondaryRatUsageReport": [
+            {
+              "secondaryRatType": "NR",
+              "qosFlowsUsageData": [
+                {
+                  "qfi": 63,
+                  "startTimeStamp": "2024-05-04T15:53:57.516Z",
+                  "endTimeStamp": "2024-05-04T15:53:57.516Z",
+                  "downlinkVolume": 0,
+                  "uplinkVolume": 0
+                }
+              ]
+            }
+          ],
+          "secondaryRatUsageInfo": [
+            {
+              "secondaryRatType": "NR",
+              "qosFlowsUsageData": [
+                {
+                  "qfi": 63,
+                  "startTimeStamp": "2024-05-04T15:53:57.516Z",
+                  "endTimeStamp": "2024-05-04T15:53:57.516Z",
+                  "downlinkVolume": 0,
+                  "uplinkVolume": 0
+                }
+              ],
+              "pduSessionUsageData": [
+                {
+                  "startTimeStamp": "2024-05-04T15:53:57.516Z",
+                  "endTimeStamp": "2024-05-04T15:53:57.516Z",
+                  "downlinkVolume": 0,
+                  "uplinkVolume": 0
+                }
+              ]
+            }
+          ],
+          "anTypeCanBeChanged": false,
+          "maReleaseInd": "REL_MAPDU_OVER_3GPP",
+          "maNwUpgradeInd": false,
+          "maRequestInd": false,
+          "unavailableAccessInd": "3GA_UNAVAILABLE",
+          "psaInfo": [
+            {
+              "psaInd": "PSA_INSERTED",
+              "dnaiList": [
+                "string"
+              ],
+              "ueIpv6Prefix": "2001:db8:abcd:12::0/64",
+              "psaUpfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+            }
+          ],
+          "ulclBpInfo": {
+            "ulclBpUpfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+          },
+          "n4Info": {
+            "n4MessageType": "PFCP_SES_EST_REQ",
+            "n4MessagePayload": {
+              "contentId": "string"
+            },
+            "n4DnaiInfo": {
+              "dnai": "string",
+              "noDnaiChangeInd": true,
+              "noLocalPsaChangeInd": true
+            },
+            "psaUpfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "ulClBpId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "n9UlPdrIdList": [
+              65535
+            ]
+          },
+          "n4InfoExt1": {
+            "n4MessageType": "PFCP_SES_EST_REQ",
+            "n4MessagePayload": {
+              "contentId": "string"
+            },
+            "n4DnaiInfo": {
+              "dnai": "string",
+              "noDnaiChangeInd": true,
+              "noLocalPsaChangeInd": true
+            },
+            "psaUpfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "ulClBpId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "n9UlPdrIdList": [
+              65535
+            ]
+          },
+          "n4InfoExt2": {
+            "n4MessageType": "PFCP_SES_EST_REQ",
+            "n4MessagePayload": {
+              "contentId": "string"
+            },
+            "n4DnaiInfo": {
+              "dnai": "string",
+              "noDnaiChangeInd": true,
+              "noLocalPsaChangeInd": true
+            },
+            "psaUpfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "ulClBpId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "n9UlPdrIdList": [
+              65535
+            ]
+          },
+          "presenceInLadn": "IN_AREA",
+          "vsmfPduSessionUri": "string",
+          "vsmfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "vSmfServiceInstanceId": "string",
+          "ismfPduSessionUri": "string",
+          "ismfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "iSmfServiceInstanceId": "string",
+          "dlServingPlmnRateCtl": 10,
+          "dnaiList": [
+            "string"
+          ],
+          "supportedFeatures": "string",
+          "roamingChargingProfile": {
+            "triggers": [
+              {
+                "triggerType": "QUOTA_THRESHOLD",
+                "triggerCategory": "IMMEDIATE_REPORT",
+                "timeLimit": 0,
+                "volumeLimit": 4294967295,
+                "volumeLimit64": 18446744073709552000,
+                "eventLimit": 4294967295,
+                "maxNumberOfccc": 4294967295,
+                "tariffTimeChange": "2024-05-04T15:53:57.516Z"
+              }
+            ],
+            "partialRecordMethod": "DEFAULT"
+          },
+          "moExpDataCounter": {
+            "counter": 0,
+            "timeStamp": "2024-05-04T15:53:57.516Z"
+          },
+          "vplmnQos": {
+            "5qi": 255,
+            "arp": {
+              "priorityLevel": 15,
+              "preemptCap": "NOT_PREEMPT",
+              "preemptVuln": "NOT_PREEMPTABLE"
+            },
+            "sessionAmbr": {
+              "uplink": "string",
+              "downlink": "string"
+            },
+            "maxFbrDl": "string",
+            "maxFbrUl": "string",
+            "guaFbrDl": "string",
+            "guaFbrUl": "string",
+            "5qiPL": 127
+          },
+          "securityResult": {
+            "integrityProtectionResult": "PERFORMED",
+            "confidentialityProtectionResult": "PERFORMED"
+          },
+          "upSecurityInfo": {
+            "upSecurity": {
+              "upIntegr": "REQUIRED",
+              "upConfid": "REQUIRED"
+            },
+            "maxIntegrityProtectedDataRateUl": "64_KBPS",
+            "maxIntegrityProtectedDataRateDl": "64_KBPS",
+            "securityResult": {
+              "integrityProtectionResult": "PERFORMED",
+              "confidentialityProtectionResult": "PERFORMED"
+            }
+          },
+          "amfNfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "guami": {
+            "plmnId": {
+              "mcc": "string",
+              "mnc": "string",
+              "nid": "string"
+            },
+            "amfId": "string"
+          },
+          "secondaryRatUsageDataReportContainer": [
+            "string"
+          ],
+          "smPolicyNotifyInd": true,
+          "pcfUeCallbackInfo": {
+            "callbackUri": "string",
+            "bindingInfo": "string"
+          },
+          "satelliteBackhaulCat": "GEO",
+          "maxIntegrityProtectedDataRateUl": "64_KBPS",
+          "maxIntegrityProtectedDataRateDl": "64_KBPS",
+          "upCnxState": "ACTIVATED",
+          "ecsAddrConfigInfos": [
+            {
+              "ecsServerAddr": {
+                "ecsFqdnList": [
+                  "string"
+                ],
+                "ecsIpAddressList": [
+                  {
+                    "ipv4Addr": "198.51.100.1",
+                    "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                    "ipv6Prefix": "2001:db8:abcd:12::0/64"
+                  },
+                  {
+                    "ipv4Addr": "198.51.100.1",
+                    "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                    "ipv6Prefix": "2001:db8:abcd:12::0/64"
+                  },
+                  {
+                    "ipv4Addr": "198.51.100.1",
+                    "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                    "ipv6Prefix": "2001:db8:abcd:12::0/64"
+                  }
+                ],
+                "ecsUriList": [
+                  "string"
+                ],
+                "ecsProviderId": "string"
+              },
+              "spatialValidityCond": {
+                "trackingAreaList": [
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "tac": "string",
+                    "nid": "string"
+                  }
+                ],
+                "countries": [
+                  "string"
+                ],
+                "geographicalServiceArea": {
+                  "geographicAreaList": [
+                    {
+                      "shape": "POINT",
+                      "point": {
+                        "lon": 180,
+                        "lat": 90
+                      }
+                    },
+                    {
+                      "shape": "POINT",
+                      "point": {
+                        "lon": 180,
+                        "lat": 90
+                      },
+                      "uncertainty": 0
+                    },
+                    {
+                      "shape": "POINT",
+                      "point": {
+                        "lon": 180,
+                        "lat": 90
+                      },
+                      "uncertaintyEllipse": {
+                        "semiMajor": 0,
+                        "semiMinor": 0,
+                        "orientationMajor": 180
+                      },
+                      "confidence": 100
+                    },
+                    {
+                      "shape": "POINT",
+                      "pointList": [
+                        {
+                          "lon": 180,
+                          "lat": 90
+                        },
+                        {
+                          "lon": 180,
+                          "lat": 90
+                        },
+                        {
+                          "lon": 180,
+                          "lat": 90
+                        }
+                      ]
+                    },
+                    {
+                      "shape": "POINT",
+                      "point": {
+                        "lon": 180,
+                        "lat": 90
+                      },
+                      "altitude": 32767
+                    },
+                    {
+                      "shape": "POINT",
+                      "point": {
+                        "lon": 180,
+                        "lat": 90
+                      },
+                      "altitude": 32767,
+                      "uncertaintyEllipse": {
+                        "semiMajor": 0,
+                        "semiMinor": 0,
+                        "orientationMajor": 180
+                      },
+                      "uncertaintyAltitude": 0,
+                      "confidence": 100
+                    },
+                    {
+                      "shape": "POINT",
+                      "point": {
+                        "lon": 180,
+                        "lat": 90
+                      },
+                      "innerRadius": 327675,
+                      "uncertaintyRadius": 0,
+                      "offsetAngle": 360,
+                      "includedAngle": 360,
+                      "confidence": 100
+                    }
+                  ],
+                  "civicAddressList": [
+                    {
+                      "country": "string",
+                      "A1": "string",
+                      "A2": "string",
+                      "A3": "string",
+                      "A4": "string",
+                      "A5": "string",
+                      "A6": "string",
+                      "PRD": "string",
+                      "POD": "string",
+                      "STS": "string",
+                      "HNO": "string",
+                      "HNS": "string",
+                      "LMK": "string",
+                      "LOC": "string",
+                      "NAM": "string",
+                      "PC": "string",
+                      "BLD": "string",
+                      "UNIT": "string",
+                      "FLR": "string",
+                      "ROOM": "string",
+                      "PLC": "string",
+                      "PCN": "string",
+                      "POBOX": "string",
+                      "ADDCODE": "string",
+                      "SEAT": "string",
+                      "RD": "string",
+                      "RDSEC": "string",
+                      "RDBR": "string",
+                      "RDSUBBR": "string",
+                      "PRM": "string",
+                      "POM": "string",
+                      "usageRules": "string",
+                      ":method": "string",
+                      "providedBy": "string"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "hrsboInfo": {
+            "hrsboAuthReqInd": true,
+            "vEasdfAddr": {
+              "ipv4Addr": "198.51.100.1",
+              "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+              "ipv6Prefix": "2001:db8:abcd:12::0/64"
+            },
+            "localDnsAddr": {
+              "ipv4Addr": "198.51.100.1",
+              "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+              "ipv6Prefix": "2001:db8:abcd:12::0/64"
+            },
+            "easRediscoveryInd": true,
+            "easInfoToRefresh": {
+              "ipv4AddressRanges": [
+                {
+                  "start": "198.51.100.1",
+                  "end": "198.51.100.1"
+                }
+              ],
+              "ipv6AddressRanges": [
+                {
+                  "start": "2001:db8:85a3::8a2e:370:7334",
+                  "end": "2001:db8:85a3::8a2e:370:7334"
+                }
+              ],
+              "fqdnList": [
+                "string"
+              ]
+            },
+            "storedOffloadIds": [
+              "string"
+            ]
+          },
+          "altSnssai": {
+            "sst": 255,
+            "sd": "string"
+          },
+          "disasterRoamingInd": true,
+          "pduSetSupportInd": true,
+          "ecnMarkingCongestionInfoStatus": [
+            {
+              "qfi": 63,
+              "activationStatus": "ACTIVE"
+            }
+          ]
+        }
+      },
+      {
+        ":path": "{apiRoot}/nsmf-pdusession/v1/pdu-sessions/{pduSessionRef}/release",
+        ":method": "POST",
+        "Content-Type": "application/JSON",
+        "network-info":{
+          "cause": "REL_DUE_TO_HO",
+          "ngApCause": {
+            "group": 0,
+            "value": 0
+          },
+          "5gMmCauseValue": 0,
+          "ueLocation": {
+            "eutraLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ignoreTai": false,
+              "ecgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "eutraCellId": "string",
+                "nid": "string"
+              },
+              "ignoreEcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:55:33.485Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalNgenbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "globalENbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              }
+            },
+            "nrLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ncgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "nrCellId": "string",
+                "nid": "string"
+              },
+              "ignoreNcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:55:33.485Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalGnbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "ntnTaiInfo": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string",
+                  "nid": "string"
+                },
+                "tacList": [
+                  "string"
+                ],
+                "derivedTac": "string"
+              }
+            },
+            "n3gaLocation": {
+              "n3gppTai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "n3IwfId": "string",
+              "ueIpv4Addr": "198.51.100.1",
+              "ueIpv6Addr": "2001:db8:85a3::8a2e:370:7334",
+              "portNumber": 0,
+              "protocol": "UDP",
+              "tnapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "twapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "hfcNodeId": {
+                "hfcNId": "string"
+              },
+              "gli": "string",
+              "w5gbanLineType": "DSL",
+              "gci": "string"
+            },
+            "utraLocation": {
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:55:33.485Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            },
+            "geraLocation": {
+              "locationNumber": "string",
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "vlrNumber": "string",
+              "mscNumber": "string",
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:55:33.485Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            }
+          },
+          "ueTimeZone": "-08:00+1",
+          "addUeLocation": {
+            "eutraLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ignoreTai": false,
+              "ecgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "eutraCellId": "string",
+                "nid": "string"
+              },
+              "ignoreEcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:55:33.486Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalNgenbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "globalENbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              }
+            },
+            "nrLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "ncgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "nrCellId": "string",
+                "nid": "string"
+              },
+              "ignoreNcgi": false,
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:55:33.486Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string",
+              "globalGnbId": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "n3IwfId": "string",
+                "gNbId": {
+                  "bitLength": 32,
+                  "gNBValue": "string"
+                },
+                "ngeNbId": "SMacroNGeNB-34B89",
+                "wagfId": "string",
+                "tngfId": "string",
+                "nid": "string",
+                "eNbId": "string"
+              },
+              "ntnTaiInfo": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string",
+                  "nid": "string"
+                },
+                "tacList": [
+                  "string"
+                ],
+                "derivedTac": "string"
+              }
+            },
+            "n3gaLocation": {
+              "n3gppTai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "n3IwfId": "string",
+              "ueIpv4Addr": "198.51.100.1",
+              "ueIpv6Addr": "2001:db8:85a3::8a2e:370:7334",
+              "portNumber": 0,
+              "protocol": "UDP",
+              "tnapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "twapId": {
+                "ssId": "string",
+                "bssId": "string",
+                "civicAddress": "string"
+              },
+              "hfcNodeId": {
+                "hfcNId": "string"
+              },
+              "gli": "string",
+              "w5gbanLineType": "DSL",
+              "gci": "string"
+            },
+            "utraLocation": {
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:55:33.486Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            },
+            "geraLocation": {
+              "locationNumber": "string",
+              "cgi": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "cellId": "string"
+              },
+              "rai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "rac": "string"
+              },
+              "sai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string",
+                "sac": "string"
+              },
+              "lai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "lac": "string"
+              },
+              "vlrNumber": "string",
+              "mscNumber": "string",
+              "ageOfLocationInformation": 32767,
+              "ueLocationTimestamp": "2024-05-04T15:55:33.486Z",
+              "geographicalInformation": "string",
+              "geodeticInformation": "string"
+            }
+          },
+          "secondaryRatUsageReport": [
+            {
+              "secondaryRatType": "NR",
+              "qosFlowsUsageData": [
+                {
+                  "qfi": 63,
+                  "startTimeStamp": "2024-05-04T15:55:33.486Z",
+                  "endTimeStamp": "2024-05-04T15:55:33.486Z",
+                  "downlinkVolume": 0,
+                  "uplinkVolume": 0
+                }
+              ]
+            }
+          ],
+          "secondaryRatUsageInfo": [
+            {
+              "secondaryRatType": "NR",
+              "qosFlowsUsageData": [
+                {
+                  "qfi": 63,
+                  "startTimeStamp": "2024-05-04T15:55:33.486Z",
+                  "endTimeStamp": "2024-05-04T15:55:33.486Z",
+                  "downlinkVolume": 0,
+                  "uplinkVolume": 0
+                }
+              ],
+              "pduSessionUsageData": [
+                {
+                  "startTimeStamp": "2024-05-04T15:55:33.486Z",
+                  "endTimeStamp": "2024-05-04T15:55:33.486Z",
+                  "downlinkVolume": 0,
+                  "uplinkVolume": 0
+                }
+              ]
+            }
+          ],
+          "n4Info": {
+            "n4MessageType": "PFCP_SES_EST_REQ",
+            "n4MessagePayload": {
+              "contentId": "string"
+            },
+            "n4DnaiInfo": {
+              "dnai": "string",
+              "noDnaiChangeInd": true,
+              "noLocalPsaChangeInd": true
+            },
+            "psaUpfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "ulClBpId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "n9UlPdrIdList": [
+              65535
+            ]
+          },
+          "n4InfoExt1": {
+            "n4MessageType": "PFCP_SES_EST_REQ",
+            "n4MessagePayload": {
+              "contentId": "string"
+            },
+            "n4DnaiInfo": {
+              "dnai": "string",
+              "noDnaiChangeInd": true,
+              "noLocalPsaChangeInd": true
+            },
+            "psaUpfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "ulClBpId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "n9UlPdrIdList": [
+              65535
+            ]
+          },
+          "n4InfoExt2": {
+            "n4MessageType": "PFCP_SES_EST_REQ",
+            "n4MessagePayload": {
+              "contentId": "string"
+            },
+            "n4DnaiInfo": {
+              "dnai": "string",
+              "noDnaiChangeInd": true,
+              "noLocalPsaChangeInd": true
+            },
+            "psaUpfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "ulClBpId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            "n9UlPdrIdList": [
+              65535
+            ]
+          }
+        }
+        
+      },
+      {
+        ":path": "{apiRoot}/nsmf-pdusession/v1/pdu-sessions/{pduSessionRef}/retrieve",
+        ":method": "POST",
+        "Content-Type": "application/JSON",
+        "network-info":{
+          "smallDataRateStatusReq": false,
+          "pduSessionContextType": "AF_COORDINATION_INFO"
+        }
+      },
+      {
+        ":path": "{apiRoot}/nsmf-event-exposure/v1/subscriptions",
+        ":method": "POST",
+        "Content-Type": "application/JSON",
+        "network-info":{
+          "supi": "string",
+          "gpsi": "string",
+          "anyUeInd": true,
+          "groupId": "string",
+          "pduSeId": 255,
+          "dnn": "string",
+          "snssai": {
+            "sst": 255,
+            "sd": "string"
+          },
+          "dnai": "string",
+          "ssId": "string",
+          "bssId": "string",
+          "upfId": "string",
+          "nfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "subId": "string",
+          "notifId": "string",
+          "notifUri": "string",
+          "altNotifIpv4Addrs": [
+            "198.51.100.1"
+          ],
+          "altNotifIpv6Addrs": [
+            "2001:db8:85a3::8a2e:370:7334"
+          ],
+          "altNotifFqdns": [
+            "string"
+          ],
+          "eventSubs": [
+            {
+              "event": "AC_TY_CH",
+              "dnaiChgType": "EARLY",
+              "dddTraDescriptors": [
+                {
+                  "ipv4Addr": "198.51.100.1",
+                  "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                  "portNumber": 0,
+                  "macAddr": "string"
+                }
+              ],
+              "dddStati": [
+                "BUFFERED",
+                "string"
+              ],
+              "appIds": [
+                "string"
+              ],
+              "networkArea": {
+                "ecgis": [
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "eutraCellId": "string",
+                    "nid": "string"
+                  }
+                ],
+                "ncgis": [
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "nrCellId": "string",
+                    "nid": "string"
+                  }
+                ],
+                "gRanNodeIds": [
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  },
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  },
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  },
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  },
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  },
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  }
+                ],
+                "tais": [
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "tac": "string",
+                    "nid": "string"
+                  }
+                ]
+              },
+              "targetPeriod": {
+                "startTime": "2024-05-04T16:13:33.082Z",
+                "stopTime": "2024-05-04T16:13:33.082Z"
+              },
+              "transacDispInd": true,
+              "transacMetrics": [
+                "PDU_SES_EST",
+                "string"
+              ],
+              "ueIpAddr": {
+                "ipv4Addr": "198.51.100.1",
+                "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                "ipv6Prefix": "2001:db8:abcd:12::0/64"
+              },
+              "upfEvents": [
+                {
+                  "type": "QOS_MONITORING",
+                  "immediateFlag": false,
+                  "measurementTypes": [
+                    "VOLUME_MEASUREMENT",
+                    "string"
+                  ],
+                  "appIds": [
+                    "string"
+                  ],
+                  "trafficFilters": [
+                    {
+                      "flowDescription": "string",
+                      "ethFlowDescription": {
+                        "destMacAddr": "string",
+                        "ethType": "string",
+                        "fDesc": "string",
+                        "fDir": "DOWNLINK",
+                        "sourceMacAddr": "string",
+                        "vlanTags": [
+                          "string"
+                        ],
+                        "srcMacAddrEnd": "string",
+                        "destMacAddrEnd": "string"
+                      },
+                      "packFiltId": "string",
+                      "packetFilterUsage": true,
+                      "tosTrafficClass": "string",
+                      "spi": "string",
+                      "flowLabel": "string",
+                      "flowDirection": "string"
+                    }
+                  ],
+                  "granularityOfMeasurement": "PER_APPLICATION",
+                  "reportingSuggestionInfo": {
+                    "reportingUrgency": "DELAY_TOLERANT",
+                    "reportingTimeInfo": 0
+                  }
+                }
+              ]
+            }
+          ],
+          "eventNotifs": [
+            {
+              "event": "AC_TY_CH",
+              "timeStamp": "2024-05-04T16:13:33.082Z",
+              "supi": "string",
+              "gpsi": "string",
+              "ueIpAddr": {
+                "ipv4Addr": "198.51.100.1",
+                "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                "ipv6Prefix": "2001:db8:abcd:12::0/64"
+              },
+              "transacInfos": [
+                {
+                  "transaction": 0,
+                  "snssai": {
+                    "sst": 255,
+                    "sd": "string"
+                  },
+                  "appIds": [
+                    "string"
+                  ],
+                  "transacMetrics": [
+                    "PDU_SES_EST",
+                    "string"
+                  ]
+                }
+              ],
+              "sourceDnai": "string",
+              "targetDnai": "string",
+              "dnaiChgType": "EARLY",
+              "candidateDnais": [
+                "string"
+              ],
+              "candDnaisPrioInd": true,
+              "easRediscoverInd": true,
+              "trafCorreInfo": {
+                "smfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "tfcCorrId": "string",
+                "dnais": [
+                  "string"
+                ],
+                "easFqdn": "string",
+                "easIpAddr": {
+                  "ipv4Addr": "198.51.100.1",
+                  "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                  "ipv6Prefix": "2001:db8:abcd:12::0/64"
+                },
+                "pduSessionNbr": 0
+              },
+              "sourceUeIpv4Addr": "198.51.100.1",
+              "sourceUeIpv6Prefix": "2001:db8:abcd:12::0/64",
+              "targetUeIpv4Addr": "198.51.100.1",
+              "targetUeIpv6Prefix": "2001:db8:abcd:12::0/64",
+              "sourceTraRouting": {
+                "dnai": "string",
+                "routeInfo": {
+                  "ipv4Addr": "198.51.100.1",
+                  "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                  "portNumber": 0
+                },
+                "routeProfId": "string"
+              },
+              "targetTraRouting": {
+                "dnai": "string",
+                "routeInfo": {
+                  "ipv4Addr": "198.51.100.1",
+                  "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                  "portNumber": 0
+                },
+                "routeProfId": "string"
+              },
+              "ueMac": "string",
+              "adIpv4Addr": "198.51.100.1",
+              "adIpv6Prefix": "2001:db8:abcd:12::0/64",
+              "reIpv4Addr": "198.51.100.1",
+              "reIpv6Prefix": "2001:db8:abcd:12::0/64",
+              "plmnId": {
+                "mcc": "string",
+                "mnc": "string"
+              },
+              "accType": "3GPP_ACCESS",
+              "pduAccTypes": [
+                "3GPP_ACCESS"
+              ],
+              "pduSeId": 255,
+              "ratType": "NR",
+              "dddStatus": "BUFFERED",
+              "dddTraDescriptor": {
+                "ipv4Addr": "198.51.100.1",
+                "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                "portNumber": 0,
+                "macAddr": "string"
+              },
+              "maxWaitTime": "2024-05-04T16:13:33.083Z",
+              "commFailure": {
+                "nasReleaseCode": "string",
+                "ranReleaseCode": {
+                  "group": 0,
+                  "value": 0
+                }
+              },
+              "ipv4Addr": "198.51.100.1",
+              "ipv6Prefixes": [
+                "2001:db8:abcd:12::0/64"
+              ],
+              "ipv6Addrs": [
+                "2001:db8:85a3::8a2e:370:7334"
+              ],
+              "pduSessType": "IPV4",
+              "sscMode": "SSC_MODE_1",
+              "qfi": 63,
+              "appId": "string",
+              "ethFlowDescs": [
+                {
+                  "destMacAddr": "string",
+                  "ethType": "string",
+                  "fDesc": "string",
+                  "fDir": "DOWNLINK",
+                  "sourceMacAddr": "string",
+                  "vlanTags": [
+                    "string"
+                  ],
+                  "srcMacAddrEnd": "string",
+                  "destMacAddrEnd": "string"
+                }
+              ],
+              "ethfDescs": [
+                {
+                  "destMacAddr": "string",
+                  "ethType": "string",
+                  "fDesc": "string",
+                  "fDir": "DOWNLINK",
+                  "sourceMacAddr": "string",
+                  "vlanTags": [
+                    "string"
+                  ],
+                  "srcMacAddrEnd": "string",
+                  "destMacAddrEnd": "string"
+                }
+              ],
+              "flowDescs": [
+                "string"
+              ],
+              "fDescs": [
+                "string"
+              ],
+              "dnn": "string",
+              "snssai": {
+                "sst": 255,
+                "sd": "string"
+              },
+              "ulDelays": [
+                0
+              ],
+              "dlDelays": [
+                0
+              ],
+              "rtDelays": [
+                0
+              ],
+              "ulCongInfo": 0,
+              "dlCongInfo": 0,
+              "cimf": true,
+              "ulDataRate": "string",
+              "dlDataRate": "string",
+              "timeWindow": {
+                "startTime": "2024-05-04T16:13:33.083Z",
+                "stopTime": "2024-05-04T16:13:33.083Z"
+              },
+              "smNasFromUe": {
+                "smNasType": "string",
+                "timeStamp": "2024-05-04T16:13:33.083Z"
+              },
+              "smNasFromSmf": {
+                "smNasType": "string",
+                "timeStamp": "2024-05-04T16:13:33.083Z",
+                "backoffTimer": 0,
+                "appliedSmccType": "DNN_CC"
+              },
+              "upRedTrans": true,
+              "ssId": "string",
+              "bssId": "string",
+              "startWlan": "2024-05-04T16:13:33.083Z",
+              "endWlan": "2024-05-04T16:13:33.083Z",
+              "pduSessInfos": [
+                {
+                  "pduSessId": 255,
+                  "sessInfo": {
+                    "n4SessId": "string",
+                    "sessInactiveTimer": 0,
+                    "pduSessStatus": "ACTIVATED"
+                  }
+                }
+              ],
+              "upfInfo": {
+                "upfId": "string",
+                "upfAddr": {
+                  "ipAddr": {
+                    "ipv4Addr": "198.51.100.1",
+                    "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                    "ipv6Prefix": "2001:db8:abcd:12::0/64"
+                  },
+                  "fqdn": "string"
+                }
+              },
+              "pdmf": true,
+              "satBackhaulCat": "GEO",
+              "supportedFeatures": "string",
+              "targetAfId": "string",
+              "5qi": 255
+            }
+          ],
+          "ImmeRep": true,
+          "notifMethod": "PERIODIC",
+          "maxReportNbr": 0,
+          "expiry": "2024-05-04T16:13:33.083Z",
+          "repPeriod": 0,
+          "guami": {
+            "plmnId": {
+              "mcc": "string",
+              "mnc": "string",
+              "nid": "string"
+            },
+            "amfId": "string"
+          },
+          "serviveName": "nnrf-nfm",
+          "supportedFeatures": "string",
+          "sampRatio": 100,
+          "partitionCriteria": [
+            "TAC",
+            "string"
+          ],
+          "grpRepTime": 0,
+          "notifFlag": "ACTIVATE",
+          "notifFlagInstruct": {
+            "bufferedNotifs": "SEND_ALL",
+            "subscription": "CLOSE"
+          },
+          "mutingSetting": {
+            "maxNoOfNotif": 0,
+            "durationBufferedNotif": 0
+          },
+          "defQosSupp": true,
+          "qosMonPending": true
+        }
+      },
+      {
+        ":path": "{apiRoot}/nsmf-event-exposure/v1/subscriptions/{subId}",
+        ":method": "GET",
+        "Content-Type": "application/JSON",
+        "network-info":{
+          "supi": "string",
+          "gpsi": "string",
+          "anyUeInd": true,
+          "groupId": "string",
+          "pduSeId": 255,
+          "dnn": "string",
+          "snssai": {
+            "sst": 255,
+            "sd": "string"
+          },
+          "dnai": "string",
+          "ssId": "string",
+          "bssId": "string",
+          "upfId": "string",
+          "nfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "subId": "string",
+          "notifId": "string",
+          "notifUri": "string",
+          "altNotifIpv4Addrs": [
+            "198.51.100.1"
+          ],
+          "altNotifIpv6Addrs": [
+            "2001:db8:85a3::8a2e:370:7334"
+          ],
+          "altNotifFqdns": [
+            "string"
+          ],
+          "eventSubs": [
+            {
+              "event": "AC_TY_CH",
+              "dnaiChgType": "EARLY",
+              "dddTraDescriptors": [
+                {
+                  "ipv4Addr": "198.51.100.1",
+                  "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                  "portNumber": 0,
+                  "macAddr": "string"
+                }
+              ],
+              "dddStati": [
+                "BUFFERED",
+                "string"
+              ],
+              "appIds": [
+                "string"
+              ],
+              "networkArea": {
+                "ecgis": [
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "eutraCellId": "string",
+                    "nid": "string"
+                  }
+                ],
+                "ncgis": [
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "nrCellId": "string",
+                    "nid": "string"
+                  }
+                ],
+                "gRanNodeIds": [
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  },
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  },
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  },
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  },
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  },
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  }
+                ],
+                "tais": [
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "tac": "string",
+                    "nid": "string"
+                  }
+                ]
+              },
+              "targetPeriod": {
+                "startTime": "2024-05-04T16:15:31.528Z",
+                "stopTime": "2024-05-04T16:15:31.528Z"
+              },
+              "transacDispInd": true,
+              "transacMetrics": [
+                "PDU_SES_EST",
+                "string"
+              ],
+              "ueIpAddr": {
+                "ipv4Addr": "198.51.100.1",
+                "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                "ipv6Prefix": "2001:db8:abcd:12::0/64"
+              },
+              "upfEvents": [
+                {
+                  "type": "QOS_MONITORING",
+                  "immediateFlag": false,
+                  "measurementTypes": [
+                    "VOLUME_MEASUREMENT",
+                    "string"
+                  ],
+                  "appIds": [
+                    "string"
+                  ],
+                  "trafficFilters": [
+                    {
+                      "flowDescription": "string",
+                      "ethFlowDescription": {
+                        "destMacAddr": "string",
+                        "ethType": "string",
+                        "fDesc": "string",
+                        "fDir": "DOWNLINK",
+                        "sourceMacAddr": "string",
+                        "vlanTags": [
+                          "string"
+                        ],
+                        "srcMacAddrEnd": "string",
+                        "destMacAddrEnd": "string"
+                      },
+                      "packFiltId": "string",
+                      "packetFilterUsage": true,
+                      "tosTrafficClass": "string",
+                      "spi": "string",
+                      "flowLabel": "string",
+                      "flowDirection": "string"
+                    }
+                  ],
+                  "granularityOfMeasurement": "PER_APPLICATION",
+                  "reportingSuggestionInfo": {
+                    "reportingUrgency": "DELAY_TOLERANT",
+                    "reportingTimeInfo": 0
+                  }
+                }
+              ]
+            }
+          ],
+          "eventNotifs": [
+            {
+              "event": "AC_TY_CH",
+              "timeStamp": "2024-05-04T16:15:31.529Z",
+              "supi": "string",
+              "gpsi": "string",
+              "ueIpAddr": {
+                "ipv4Addr": "198.51.100.1",
+                "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                "ipv6Prefix": "2001:db8:abcd:12::0/64"
+              },
+              "transacInfos": [
+                {
+                  "transaction": 0,
+                  "snssai": {
+                    "sst": 255,
+                    "sd": "string"
+                  },
+                  "appIds": [
+                    "string"
+                  ],
+                  "transacMetrics": [
+                    "PDU_SES_EST",
+                    "string"
+                  ]
+                }
+              ],
+              "sourceDnai": "string",
+              "targetDnai": "string",
+              "dnaiChgType": "EARLY",
+              "candidateDnais": [
+                "string"
+              ],
+              "candDnaisPrioInd": true,
+              "easRediscoverInd": true,
+              "trafCorreInfo": {
+                "smfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "tfcCorrId": "string",
+                "dnais": [
+                  "string"
+                ],
+                "easFqdn": "string",
+                "easIpAddr": {
+                  "ipv4Addr": "198.51.100.1",
+                  "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                  "ipv6Prefix": "2001:db8:abcd:12::0/64"
+                },
+                "pduSessionNbr": 0
+              },
+              "sourceUeIpv4Addr": "198.51.100.1",
+              "sourceUeIpv6Prefix": "2001:db8:abcd:12::0/64",
+              "targetUeIpv4Addr": "198.51.100.1",
+              "targetUeIpv6Prefix": "2001:db8:abcd:12::0/64",
+              "sourceTraRouting": {
+                "dnai": "string",
+                "routeInfo": {
+                  "ipv4Addr": "198.51.100.1",
+                  "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                  "portNumber": 0
+                },
+                "routeProfId": "string"
+              },
+              "targetTraRouting": {
+                "dnai": "string",
+                "routeInfo": {
+                  "ipv4Addr": "198.51.100.1",
+                  "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                  "portNumber": 0
+                },
+                "routeProfId": "string"
+              },
+              "ueMac": "string",
+              "adIpv4Addr": "198.51.100.1",
+              "adIpv6Prefix": "2001:db8:abcd:12::0/64",
+              "reIpv4Addr": "198.51.100.1",
+              "reIpv6Prefix": "2001:db8:abcd:12::0/64",
+              "plmnId": {
+                "mcc": "string",
+                "mnc": "string"
+              },
+              "accType": "3GPP_ACCESS",
+              "pduAccTypes": [
+                "3GPP_ACCESS"
+              ],
+              "pduSeId": 255,
+              "ratType": "NR",
+              "dddStatus": "BUFFERED",
+              "dddTraDescriptor": {
+                "ipv4Addr": "198.51.100.1",
+                "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                "portNumber": 0,
+                "macAddr": "string"
+              },
+              "maxWaitTime": "2024-05-04T16:15:31.529Z",
+              "commFailure": {
+                "nasReleaseCode": "string",
+                "ranReleaseCode": {
+                  "group": 0,
+                  "value": 0
+                }
+              },
+              "ipv4Addr": "198.51.100.1",
+              "ipv6Prefixes": [
+                "2001:db8:abcd:12::0/64"
+              ],
+              "ipv6Addrs": [
+                "2001:db8:85a3::8a2e:370:7334"
+              ],
+              "pduSessType": "IPV4",
+              "sscMode": "SSC_MODE_1",
+              "qfi": 63,
+              "appId": "string",
+              "ethFlowDescs": [
+                {
+                  "destMacAddr": "string",
+                  "ethType": "string",
+                  "fDesc": "string",
+                  "fDir": "DOWNLINK",
+                  "sourceMacAddr": "string",
+                  "vlanTags": [
+                    "string"
+                  ],
+                  "srcMacAddrEnd": "string",
+                  "destMacAddrEnd": "string"
+                }
+              ],
+              "ethfDescs": [
+                {
+                  "destMacAddr": "string",
+                  "ethType": "string",
+                  "fDesc": "string",
+                  "fDir": "DOWNLINK",
+                  "sourceMacAddr": "string",
+                  "vlanTags": [
+                    "string"
+                  ],
+                  "srcMacAddrEnd": "string",
+                  "destMacAddrEnd": "string"
+                }
+              ],
+              "flowDescs": [
+                "string"
+              ],
+              "fDescs": [
+                "string"
+              ],
+              "dnn": "string",
+              "snssai": {
+                "sst": 255,
+                "sd": "string"
+              },
+              "ulDelays": [
+                0
+              ],
+              "dlDelays": [
+                0
+              ],
+              "rtDelays": [
+                0
+              ],
+              "ulCongInfo": 0,
+              "dlCongInfo": 0,
+              "cimf": true,
+              "ulDataRate": "string",
+              "dlDataRate": "string",
+              "timeWindow": {
+                "startTime": "2024-05-04T16:15:31.529Z",
+                "stopTime": "2024-05-04T16:15:31.529Z"
+              },
+              "smNasFromUe": {
+                "smNasType": "string",
+                "timeStamp": "2024-05-04T16:15:31.529Z"
+              },
+              "smNasFromSmf": {
+                "smNasType": "string",
+                "timeStamp": "2024-05-04T16:15:31.529Z",
+                "backoffTimer": 0,
+                "appliedSmccType": "DNN_CC"
+              },
+              "upRedTrans": true,
+              "ssId": "string",
+              "bssId": "string",
+              "startWlan": "2024-05-04T16:15:31.529Z",
+              "endWlan": "2024-05-04T16:15:31.529Z",
+              "pduSessInfos": [
+                {
+                  "pduSessId": 255,
+                  "sessInfo": {
+                    "n4SessId": "string",
+                    "sessInactiveTimer": 0,
+                    "pduSessStatus": "ACTIVATED"
+                  }
+                }
+              ],
+              "upfInfo": {
+                "upfId": "string",
+                "upfAddr": {
+                  "ipAddr": {
+                    "ipv4Addr": "198.51.100.1",
+                    "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                    "ipv6Prefix": "2001:db8:abcd:12::0/64"
+                  },
+                  "fqdn": "string"
+                }
+              },
+              "pdmf": true,
+              "satBackhaulCat": "GEO",
+              "supportedFeatures": "string",
+              "targetAfId": "string",
+              "5qi": 255
+            }
+          ],
+          "ImmeRep": true,
+          "notifMethod": "PERIODIC",
+          "maxReportNbr": 0,
+          "expiry": "2024-05-04T16:15:31.529Z",
+          "repPeriod": 0,
+          "guami": {
+            "plmnId": {
+              "mcc": "string",
+              "mnc": "string",
+              "nid": "string"
+            },
+            "amfId": "string"
+          },
+          "serviveName": "nnrf-nfm",
+          "supportedFeatures": "string",
+          "sampRatio": 100,
+          "partitionCriteria": [
+            "TAC",
+            "string"
+          ],
+          "grpRepTime": 0,
+          "notifFlag": "ACTIVATE",
+          "notifFlagInstruct": {
+            "bufferedNotifs": "SEND_ALL",
+            "subscription": "CLOSE"
+          },
+          "mutingSetting": {
+            "maxNoOfNotif": 0,
+            "durationBufferedNotif": 0
+          },
+          "defQosSupp": true,
+          "qosMonPending": true
+        }
+      },
+      {
+        ":path": "{apiRoot}/nsmf-event-exposure/v1/subscriptions/{subId}",
+        ":method": "PUT",
+        "Content-Type": "application/JSON",
+        "network-info":{
+          "supi": "string",
+          "gpsi": "string",
+          "anyUeInd": true,
+          "groupId": "string",
+          "pduSeId": 255,
+          "dnn": "string",
+          "snssai": {
+            "sst": 255,
+            "sd": "string"
+          },
+          "dnai": "string",
+          "ssId": "string",
+          "bssId": "string",
+          "upfId": "string",
+          "nfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "subId": "string",
+          "notifId": "string",
+          "notifUri": "string",
+          "altNotifIpv4Addrs": [
+            "198.51.100.1"
+          ],
+          "altNotifIpv6Addrs": [
+            "2001:db8:85a3::8a2e:370:7334"
+          ],
+          "altNotifFqdns": [
+            "string"
+          ],
+          "eventSubs": [
+            {
+              "event": "AC_TY_CH",
+              "dnaiChgType": "EARLY",
+              "dddTraDescriptors": [
+                {
+                  "ipv4Addr": "198.51.100.1",
+                  "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                  "portNumber": 0,
+                  "macAddr": "string"
+                }
+              ],
+              "dddStati": [
+                "BUFFERED",
+                "string"
+              ],
+              "appIds": [
+                "string"
+              ],
+              "networkArea": {
+                "ecgis": [
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "eutraCellId": "string",
+                    "nid": "string"
+                  }
+                ],
+                "ncgis": [
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "nrCellId": "string",
+                    "nid": "string"
+                  }
+                ],
+                "gRanNodeIds": [
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  },
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  },
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  },
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  },
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  },
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "n3IwfId": "string",
+                    "gNbId": {
+                      "bitLength": 32,
+                      "gNBValue": "string"
+                    },
+                    "ngeNbId": "SMacroNGeNB-34B89",
+                    "wagfId": "string",
+                    "tngfId": "string",
+                    "nid": "string",
+                    "eNbId": "string"
+                  }
+                ],
+                "tais": [
+                  {
+                    "plmnId": {
+                      "mcc": "string",
+                      "mnc": "string"
+                    },
+                    "tac": "string",
+                    "nid": "string"
+                  }
+                ]
+              },
+              "targetPeriod": {
+                "startTime": "2024-05-04T16:16:41.392Z",
+                "stopTime": "2024-05-04T16:16:41.392Z"
+              },
+              "transacDispInd": true,
+              "transacMetrics": [
+                "PDU_SES_EST",
+                "string"
+              ],
+              "ueIpAddr": {
+                "ipv4Addr": "198.51.100.1",
+                "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                "ipv6Prefix": "2001:db8:abcd:12::0/64"
+              },
+              "upfEvents": [
+                {
+                  "type": "QOS_MONITORING",
+                  "immediateFlag": false,
+                  "measurementTypes": [
+                    "VOLUME_MEASUREMENT",
+                    "string"
+                  ],
+                  "appIds": [
+                    "string"
+                  ],
+                  "trafficFilters": [
+                    {
+                      "flowDescription": "string",
+                      "ethFlowDescription": {
+                        "destMacAddr": "string",
+                        "ethType": "string",
+                        "fDesc": "string",
+                        "fDir": "DOWNLINK",
+                        "sourceMacAddr": "string",
+                        "vlanTags": [
+                          "string"
+                        ],
+                        "srcMacAddrEnd": "string",
+                        "destMacAddrEnd": "string"
+                      },
+                      "packFiltId": "string",
+                      "packetFilterUsage": true,
+                      "tosTrafficClass": "string",
+                      "spi": "string",
+                      "flowLabel": "string",
+                      "flowDirection": "string"
+                    }
+                  ],
+                  "granularityOfMeasurement": "PER_APPLICATION",
+                  "reportingSuggestionInfo": {
+                    "reportingUrgency": "DELAY_TOLERANT",
+                    "reportingTimeInfo": 0
+                  }
+                }
+              ]
+            }
+          ],
+          "eventNotifs": [
+            {
+              "event": "AC_TY_CH",
+              "timeStamp": "2024-05-04T16:16:41.392Z",
+              "supi": "string",
+              "gpsi": "string",
+              "ueIpAddr": {
+                "ipv4Addr": "198.51.100.1",
+                "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                "ipv6Prefix": "2001:db8:abcd:12::0/64"
+              },
+              "transacInfos": [
+                {
+                  "transaction": 0,
+                  "snssai": {
+                    "sst": 255,
+                    "sd": "string"
+                  },
+                  "appIds": [
+                    "string"
+                  ],
+                  "transacMetrics": [
+                    "PDU_SES_EST",
+                    "string"
+                  ]
+                }
+              ],
+              "sourceDnai": "string",
+              "targetDnai": "string",
+              "dnaiChgType": "EARLY",
+              "candidateDnais": [
+                "string"
+              ],
+              "candDnaisPrioInd": true,
+              "easRediscoverInd": true,
+              "trafCorreInfo": {
+                "smfId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "tfcCorrId": "string",
+                "dnais": [
+                  "string"
+                ],
+                "easFqdn": "string",
+                "easIpAddr": {
+                  "ipv4Addr": "198.51.100.1",
+                  "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                  "ipv6Prefix": "2001:db8:abcd:12::0/64"
+                },
+                "pduSessionNbr": 0
+              },
+              "sourceUeIpv4Addr": "198.51.100.1",
+              "sourceUeIpv6Prefix": "2001:db8:abcd:12::0/64",
+              "targetUeIpv4Addr": "198.51.100.1",
+              "targetUeIpv6Prefix": "2001:db8:abcd:12::0/64",
+              "sourceTraRouting": {
+                "dnai": "string",
+                "routeInfo": {
+                  "ipv4Addr": "198.51.100.1",
+                  "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                  "portNumber": 0
+                },
+                "routeProfId": "string"
+              },
+              "targetTraRouting": {
+                "dnai": "string",
+                "routeInfo": {
+                  "ipv4Addr": "198.51.100.1",
+                  "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                  "portNumber": 0
+                },
+                "routeProfId": "string"
+              },
+              "ueMac": "string",
+              "adIpv4Addr": "198.51.100.1",
+              "adIpv6Prefix": "2001:db8:abcd:12::0/64",
+              "reIpv4Addr": "198.51.100.1",
+              "reIpv6Prefix": "2001:db8:abcd:12::0/64",
+              "plmnId": {
+                "mcc": "string",
+                "mnc": "string"
+              },
+              "accType": "3GPP_ACCESS",
+              "pduAccTypes": [
+                "3GPP_ACCESS"
+              ],
+              "pduSeId": 255,
+              "ratType": "NR",
+              "dddStatus": "BUFFERED",
+              "dddTraDescriptor": {
+                "ipv4Addr": "198.51.100.1",
+                "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                "portNumber": 0,
+                "macAddr": "string"
+              },
+              "maxWaitTime": "2024-05-04T16:16:41.392Z",
+              "commFailure": {
+                "nasReleaseCode": "string",
+                "ranReleaseCode": {
+                  "group": 0,
+                  "value": 0
+                }
+              },
+              "ipv4Addr": "198.51.100.1",
+              "ipv6Prefixes": [
+                "2001:db8:abcd:12::0/64"
+              ],
+              "ipv6Addrs": [
+                "2001:db8:85a3::8a2e:370:7334"
+              ],
+              "pduSessType": "IPV4",
+              "sscMode": "SSC_MODE_1",
+              "qfi": 63,
+              "appId": "string",
+              "ethFlowDescs": [
+                {
+                  "destMacAddr": "string",
+                  "ethType": "string",
+                  "fDesc": "string",
+                  "fDir": "DOWNLINK",
+                  "sourceMacAddr": "string",
+                  "vlanTags": [
+                    "string"
+                  ],
+                  "srcMacAddrEnd": "string",
+                  "destMacAddrEnd": "string"
+                }
+              ],
+              "ethfDescs": [
+                {
+                  "destMacAddr": "string",
+                  "ethType": "string",
+                  "fDesc": "string",
+                  "fDir": "DOWNLINK",
+                  "sourceMacAddr": "string",
+                  "vlanTags": [
+                    "string"
+                  ],
+                  "srcMacAddrEnd": "string",
+                  "destMacAddrEnd": "string"
+                }
+              ],
+              "flowDescs": [
+                "string"
+              ],
+              "fDescs": [
+                "string"
+              ],
+              "dnn": "string",
+              "snssai": {
+                "sst": 255,
+                "sd": "string"
+              },
+              "ulDelays": [
+                0
+              ],
+              "dlDelays": [
+                0
+              ],
+              "rtDelays": [
+                0
+              ],
+              "ulCongInfo": 0,
+              "dlCongInfo": 0,
+              "cimf": true,
+              "ulDataRate": "string",
+              "dlDataRate": "string",
+              "timeWindow": {
+                "startTime": "2024-05-04T16:16:41.392Z",
+                "stopTime": "2024-05-04T16:16:41.392Z"
+              },
+              "smNasFromUe": {
+                "smNasType": "string",
+                "timeStamp": "2024-05-04T16:16:41.392Z"
+              },
+              "smNasFromSmf": {
+                "smNasType": "string",
+                "timeStamp": "2024-05-04T16:16:41.392Z",
+                "backoffTimer": 0,
+                "appliedSmccType": "DNN_CC"
+              },
+              "upRedTrans": true,
+              "ssId": "string",
+              "bssId": "string",
+              "startWlan": "2024-05-04T16:16:41.392Z",
+              "endWlan": "2024-05-04T16:16:41.392Z",
+              "pduSessInfos": [
+                {
+                  "pduSessId": 255,
+                  "sessInfo": {
+                    "n4SessId": "string",
+                    "sessInactiveTimer": 0,
+                    "pduSessStatus": "ACTIVATED"
+                  }
+                }
+              ],
+              "upfInfo": {
+                "upfId": "string",
+                "upfAddr": {
+                  "ipAddr": {
+                    "ipv4Addr": "198.51.100.1",
+                    "ipv6Addr": "2001:db8:85a3::8a2e:370:7334",
+                    "ipv6Prefix": "2001:db8:abcd:12::0/64"
+                  },
+                  "fqdn": "string"
+                }
+              },
+              "pdmf": true,
+              "satBackhaulCat": "GEO",
+              "supportedFeatures": "string",
+              "targetAfId": "string",
+              "5qi": 255
+            }
+          ],
+          "ImmeRep": true,
+          "notifMethod": "PERIODIC",
+          "maxReportNbr": 0,
+          "expiry": "2024-05-04T16:16:41.392Z",
+          "repPeriod": 0,
+          "guami": {
+            "plmnId": {
+              "mcc": "string",
+              "mnc": "string",
+              "nid": "string"
+            },
+            "amfId": "string"
+          },
+          "serviveName": "nnrf-nfm",
+          "supportedFeatures": "string",
+          "sampRatio": 100,
+          "partitionCriteria": [
+            "TAC",
+            "string"
+          ],
+          "grpRepTime": 0,
+          "notifFlag": "ACTIVATE",
+          "notifFlagInstruct": {
+            "bufferedNotifs": "SEND_ALL",
+            "subscription": "CLOSE"
+          },
+          "mutingSetting": {
+            "maxNoOfNotif": 0,
+            "durationBufferedNotif": 0
+          },
+          "defQosSupp": true,
+          "qosMonPending": true
+        }
+      },
+      {
+        ":path": "{apiRoot}/nsmf-event-exposure/v1/subscriptions/{subId}",
+        ":method": "DELETE",
+        "Content-Type": "application/JSON",
+        "network-info":{
+          "subId":"string"
+        }
+      }
+    
+]

@@ -1,0 +1,355 @@
+[
+    {
+        ":path": "{apiRoot}/nnssf-nssaiavailability/v1/nssai-availability/{nfId}",
+        ":method": "PUT",
+        "Content-Type": "application/JSON",
+        "network-info":{
+          "supportedNssaiAvailabilityData": [
+            {
+              "tai": {
+                "plmnId": {
+                  "mcc": "string",
+                  "mnc": "string"
+                },
+                "tac": "string",
+                "nid": "string"
+              },
+              "supportedSnssaiList": [
+                {
+                  "sst": 255,
+                  "sd": "string",
+                  "sdRanges": [
+                    {
+                      "start": "string",
+                      "end": "string"
+                    }
+                  ],
+                  "wildcardSd": true
+                }
+              ],
+              "taiList": [
+                {
+                  "plmnId": {
+                    "mcc": "string",
+                    "mnc": "string"
+                  },
+                  "tac": "string",
+                  "nid": "string"
+                }
+              ],
+              "taiRangeList": [
+                {
+                  "plmnId": {
+                    "mcc": "string",
+                    "mnc": "string"
+                  },
+                  "tacRangeList": [
+                    {
+                      "start": "string",
+                      "end": "string",
+                      "pattern": "string"
+                    },
+                    {
+                      "start": "string",
+                      "end": "string",
+                      "pattern": "string"
+                    }
+                  ],
+                  "nid": "string"
+                }
+              ],
+              "nsagInfos": [
+                {
+                  "nsagIds": [
+                    0
+                  ],
+                  "snssaiList": [
+                    {
+                      "sst": 255,
+                      "sd": "string"
+                    }
+                  ],
+                  "taiList": [
+                    {
+                      "plmnId": {
+                        "mcc": "string",
+                        "mnc": "string"
+                      },
+                      "tac": "string",
+                      "nid": "string"
+                    }
+                  ],
+                  "taiRangeList": [
+                    {
+                      "plmnId": {
+                        "mcc": "string",
+                        "mnc": "string"
+                      },
+                      "tacRangeList": [
+                        {
+                          "start": "string",
+                          "end": "string",
+                          "pattern": "string"
+                        },
+                        {
+                          "start": "string",
+                          "end": "string",
+                          "pattern": "string"
+                        }
+                      ],
+                      "nid": "string"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "supportedFeatures": "string",
+          "amfSetId": "string"
+        }
+      },
+      {
+        ":path": "{apiRoot}/nnssf-nssaiavailability/v1/nssai-availability/{nfId}",
+        ":method": "PATCH",
+        "Content-Type": "application/JSON",
+        "network-info":{
+          "op": "add",
+          ":path": "string",
+          "from": "string",
+          "value": "string"
+        }
+      },
+      {
+        ":path": "{apiRoot}/nnssf-nssaiavailability/v1/nssai-availability/{nfId}",
+        ":method": "DELETE",
+        "Content-Type": "application/JSON",
+        "network-info":{
+            "nfId": "string"
+        }
+      },
+      {
+        ":path": "{apiRoot}/nnssf-nssaiavailability/v1/nssai-availability/subscriptions/{subscriptionId}",
+        ":method": "DELETE",
+        "Content-Type": "application/JSON",
+        "network-info":{
+          "subscriptionId": "string"
+        }
+      },
+      {
+        ":path": "{apiRoot}/nnssf-nssaiavailability/v1/nssai-availability/subscriptions/{subscriptionId}",
+        ":method": "PATCH",
+        "Content-Type": "application/JSON",
+        "network-info":{
+            "op": "add",
+            ":path": "string",
+            "from": "string",
+            "value": "string"
+        }
+      },
+      {
+        ":path": "{apiRoot}/nnssf-nssaiavailability/v1/nssai-availability",
+        ":method": "OPTION",
+        "Content-Type": "application/JSON",
+        "network-info":{
+          "string":"string_id"
+        }
+      },
+      {
+        ":path": "{apiRoot}/nnssf-nsselection/v2/network-slice-information",
+        ":method": "GET",
+        "Content-Type": "application/JSON",
+        "network-info":{
+                "subscribedNssai": [
+                  {
+                    "subscribedSnssai": {
+                      "sst": 255,
+                      "sd": "string"
+                    },
+                    "defaultIndication": true,
+                    "subscribedNsSrgList": [
+                      "string"
+                    ]
+                  }
+                ],
+                "allowedNssaiCurrentAccess": {
+                  "allowedSnssaiList": [
+                    {
+                      "allowedSnssai": {
+                        "sst": 255,
+                        "sd": "string"
+                      },
+                      "nsiInformationList": [
+                        {
+                          "nrfId": "string",
+                          "nsiId": "string",
+                          "nrfNfMgtUri": "string",
+                          "nrfAccessTokenUri": "string",
+                          "nrfOauth2Required": {}
+                        }
+                      ],
+                      "mappedHomeSnssai": {
+                        "sst": 255,
+                        "sd": "string"
+                      }
+                    }
+                  ],
+                  "accessType": "3GPP_ACCESS"
+                },
+                "allowedNssaiOtherAccess": {
+                  "allowedSnssaiList": [
+                    {
+                      "allowedSnssai": {
+                        "sst": 255,
+                        "sd": "string"
+                      },
+                      "nsiInformationList": [
+                        {
+                          "nrfId": "string",
+                          "nsiId": "string",
+                          "nrfNfMgtUri": "string",
+                          "nrfAccessTokenUri": "string",
+                          "nrfOauth2Required": {}
+                        }
+                      ],
+                      "mappedHomeSnssai": {
+                        "sst": 255,
+                        "sd": "string"
+                      }
+                    }
+                  ],
+                  "accessType": "3GPP_ACCESS"
+                },
+                "sNssaiForMapping": [
+                  {
+                    "sst": 255,
+                    "sd": "string"
+                  }
+                ],
+                "requestedNssai": [
+                  {
+                    "sst": 255,
+                    "sd": "string"
+                  }
+                ],
+                "defaultConfiguredSnssaiInd": false,
+                "mappingOfNssai": [
+                  {
+                    "servingSnssai": {
+                      "sst": 255,
+                      "sd": "string"
+                    },
+                    "homeSnssai": {
+                      "sst": 255,
+                      "sd": "string"
+                    }
+                  }
+                ],
+                "requestMapping": true,
+                "ueSupNssrgInd": true,
+                "suppressNssrgInd": true,
+                "nsagSupported": false
+              }
+        },
+      {
+        ":path": "{apiRoot}/nnssf-nsselection/v2/network-slice-informatio",
+        ":method": "GET",
+        "Content-Type": "application/JSON",
+        "network-info":{
+                "sNssai": {
+                  "sst": 255,
+                  "sd": "string"
+                },
+                "roamingIndication": "NON_ROAMING",
+                "homeSnssai": {
+                  "sst": 255,
+                  "sd": "string"
+                }
+              }
+        },
+      {
+        ":path": "{apiRoot}/nnssf-nsselection/v2/network-slice-information",
+        ":method": "GET",
+        "Content-Type": "application/JSON",
+        "network-info":{
+                "subscribedNssai": [
+                  {
+                    "subscribedSnssai": {
+                      "sst": 255,
+                      "sd": "string"
+                    },
+                    "defaultIndication": true,
+                    "subscribedNsSrgList": [
+                      "string"
+                    ]
+                  }
+                ],
+                "allowedNssaiCurrentAccess": {
+                  "allowedSnssaiList": [
+                    {
+                      "allowedSnssai": {
+                        "sst": 255,
+                        "sd": "string"
+                      },
+                      "nsiInformationList": [
+                        {
+                          "nrfId": "string",
+                          "nsiId": "string",
+                          "nrfNfMgtUri": "string",
+                          "nrfAccessTokenUri": "string",
+                          "nrfOauth2Required": {}
+                        }
+                      ],
+                      "mappedHomeSnssai": {
+                        "sst": 255,
+                        "sd": "string"
+                      }
+                    }
+                  ],
+                  "accessType": "3GPP_ACCESS"
+                },
+                "allowedNssaiOtherAccess": {
+                  "allowedSnssaiList": [
+                    {
+                      "allowedSnssai": {
+                        "sst": 255,
+                        "sd": "string"
+                      },
+                      "nsiInformationList": [
+                        {
+                          "nrfId": "string",
+                          "nsiId": "string",
+                          "nrfNfMgtUri": "string",
+                          "nrfAccessTokenUri": "string",
+                          "nrfOauth2Required": {}
+                        }
+                      ],
+                      "mappedHomeSnssai": {
+                        "sst": 255,
+                        "sd": "string"
+                      }
+                    }
+                  ],
+                  "accessType": "3GPP_ACCESS"
+                },
+                "defaultConfiguredSnssaiInd": true,
+                "requestedNssai": [
+                  {
+                    "sst": 255,
+                    "sd": "string"
+                  }
+                ],
+                "mappingOfNssai": [
+                  {
+                    "servingSnssai": {
+                      "sst": 255,
+                      "sd": "string"
+                    },
+                    "homeSnssai": {
+                      "sst": 255,
+                      "sd": "string"
+                    }
+                  }
+                ]
+              }
+        }  
+]
