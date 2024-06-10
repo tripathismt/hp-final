@@ -1,3 +1,9 @@
+first install the node modules using command
+## npm install
+or
+## npm i
+
+
 first run the server using the command
 ## npm run start
 
