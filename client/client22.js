@@ -1,15 +1,15 @@
 const http2 = require('http2');
 const { setTimeout } = require('timers/promises');
-const networkHeader = require('../network/n22.json'); // Adjust the path as necessary
+const networkHeader = require('../network/n22.json'); 
 const { exit } = require('process');
 
 const sessionOptions = {
   settings: {
-    maxHeaderListSize: 1024 * 1024 // 1MB header size limit
+    maxHeaderListSize: 2*1024 * 1024 
   }
 };
 
-const session = http2.connect('http://localhost:8000', sessionOptions); // Update the server URL if needed
+const session = http2.connect('http://localhost:8000', sessionOptions); 
 
 session.on('error', (err) => {
   console.error('Session error:', err);
@@ -35,7 +35,7 @@ const servercall = async (attempt = 0) => {
 
   const header = networkHeader[num];
   const options = {
-    ':path': header[':path'].replace('{apiRoot}', '/api'), // Replace {apiRoot} with actual root path
+    ':path': header[':path'].replace('{apiRoot}', '/api'), 
     ':method': header[':method'],
     'Content-Type': header['Content-Type'],
     'network-info': JSON.stringify(header['network-info']),
@@ -100,7 +100,7 @@ const servercall = async (attempt = 0) => {
 const startServerCalls = async () => {
   for (let i = 0; i < maxRequests; i++) {
     await servercall();
-    await setTimeout(1000); // Wait for 1 second between each request
+    await setTimeout(1000); 
   }
 };
 

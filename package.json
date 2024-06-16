@@ -106,8 +106,10 @@
     "client8":"node client/client8.js",
     "client10":"node client/client10.js",
     "client11":"node client/client11.js",
+    "client12":"node client/client12.js",
     "client13":"node client/client13.js",
     "client14":"node client/client14.js",
+    "client15":"node client/client15.js",
     "client22":"node client/client22.js"
   },
   "keywords": [],

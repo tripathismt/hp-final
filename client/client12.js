@@ -1,11 +1,11 @@
 const http2 = require('http2');
 const { setTimeout } = require('timers/promises');
-const networkHeader = require('../network/n11.json'); 
+const networkHeader = require('../network/n12.json'); 
 const { exit } = require('process');
 
 const sessionOptions = {
   settings: {
-    maxHeaderListSize: 2 * 1024 * 1024 
+    maxHeaderListSize: 1024 * 1024 
   }
 };
 
@@ -35,7 +35,7 @@ const servercall = async (attempt = 0) => {
 
   const header = networkHeader[num];
   const options = {
-    ':path': header[':path'].replace('{apiRoot}', '/api'),
+    ':path': header[':path'].replace('{apiRoot}', '/api'), 
     ':method': header[':method'],
     'Content-Type': header['Content-Type'],
     'network-info': JSON.stringify(header['network-info']),

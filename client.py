@@ -12,7 +12,7 @@ def run_client(client_number):
 
 if __name__ == "__main__":
     # Array of allowed client numbers
-    allowed_clients = [7, 8, 10, 11, 13, 14, 22]
+    allowed_clients = [7, 8, 10, 11, 12, 13, 14 ,15 ,22]
 
     while True:
         # Print available client IDs

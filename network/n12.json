@@ -1,0 +1,167 @@
+[
+  {
+  ":path": "/{apiRoot}/nausf-auth/v1/ue-authentications",
+  ":method": "POST",
+  "Content-Type": "application/JSON",
+  "network-info": {
+    "supiOrSuci": "string",
+    "servingNetworkName": "string",
+    "resynchronizationInfo": {
+      "rand": "string",
+      "auts": "string"
+    },
+    "pei": "string",
+    "traceData": {
+      "traceRef": "string",
+      "traceDepth": "MINIMUM",
+      "neTypeList": "string",
+      "eventList": "string",
+      "collectionEntityIpv4Addr": "198.51.100.1",
+      "collectionEntityIpv6Addr": "2001:db8:85a3::8a2e:370:7334",
+      "traceReportingConsumerUri": "string",
+      "interfaceList": "string"
+    },
+    "udmGroupId": "string",
+    "routingIndicator": "string",
+    "cellCagInfo": [
+      "string"
+    ],
+    "n5gcInd": false,
+    "supportedFeatures": "string",
+    "nswoInd": false,
+    "disasterRoamingInd": false,
+    "onboardingInd": false,
+    "aun3Ind": false
+  }
+},{
+  ":path": "/{apiRoot}/nausf-auth/v1/ue-authentications/deregister",
+  ":method": "POST",
+  "Content-Type": "application/JSON",
+  "network-info": {
+    "supi": "string",
+    "supportedFeatures": "string"
+  }
+},{
+  ":path": "/{apiRoot}/nausf-auth/v1/ue-authentications/{authCtxId}/5g-aka-confirmation",
+  ":method": "PUT",
+  "Content-Type": "application/JSON",
+  "network-info": {
+    "resStar": "string",
+    "supportedFeatures": "string"
+  }
+},{
+  ":path": "/{apiRoot}/nausf-auth/v1/ue-authentications/{authCtxId}/eap-session",
+  ":method": "POST",
+  "Content-Type": "application/JSON",
+  "network-info": {
+    "eapPayload": "string",
+    "kSeaf": "string",
+    "_links": {
+      "additionalProp1": [
+        {
+          "href": "string"
+        }
+      ],
+      "additionalProp2": [
+        {
+          "href": "string"
+        }
+      ],
+      "additionalProp3": [
+        {
+          "href": "string"
+        }
+      ]
+    },
+    "authResult": "AUTHENTICATION_SUCCESS",
+    "supi": "string",
+    "supportedFeatures": "string",
+    "pvsInfo": [
+      {
+        "ipv4Addresses": [
+          "198.51.100.1"
+        ],
+        "ipv6Addresses": [
+          "2001:db8:85a3::8a2e:370:7334"
+        ],
+        "fqdnList": [
+          "string"
+        ]
+      },
+      {
+        "ipv4Addresses": [
+          "198.51.100.1"
+        ],
+        "ipv6Addresses": [
+          "2001:db8:85a3::8a2e:370:7334"
+        ],
+        "fqdnList": [
+          "string"
+        ]
+      },
+      {
+        "ipv4Addresses": [
+          "198.51.100.1"
+        ],
+        "ipv6Addresses": [
+          "2001:db8:85a3::8a2e:370:7334"
+        ],
+        "fqdnList": [
+          "string"
+        ]
+      }
+    ],
+    "msk": "string"
+  }
+},{
+  ":path": "/{apiRoot}/nausf-auth/v1/rg-authentications",
+  ":method": "POST",
+  "Content-Type": "application/JSON",
+  "network-info": {
+    "suci": "string",
+    "authenticatedInd": false,
+    "supportedFeatures": "string"
+  }
+},{
+  ":path": "/{apiRoot}/nausf-auth/v1/prose-authentications",
+  ":method": "POST",
+  "Content-Type": "application/JSON",
+  "network-info": {
+    "supiOrSuci": "string",
+    "5gPrukId": "string",
+    "relayServiceCode": 16777215,
+    "nonce1": "string",
+    "servingNetworkName": "string",
+    "supportedFeatures": "string"
+  }
+},{
+  ":path": "/{apiRoot}/nausf-auth/v1/prose-authentications/{authCtxId}/prose-auth",
+  ":method": "POST",
+  "Content-Type": "application/JSON",
+  "network-info": {
+    "eapPayload": "string",
+    "knrProSe": "string",
+    "_links": {
+      "additionalProp1": [
+        {
+          "href": "string"
+        }
+      ],
+      "additionalProp2": [
+        {
+          "href": "string"
+        }
+      ],
+      "additionalProp3": [
+        {
+          "href": "string"
+        }
+      ]
+    },
+    "authResult": "AUTHENTICATION_SUCCESS",
+    "supportedFeatures": "string",
+    "nonce2": "string",
+    "5gPrukId": "string"
+  }
+}
+]
