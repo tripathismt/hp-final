@@ -120,14 +120,6 @@
         }
       },
       {
-        ":path": "{apiRoot}/nnssf-nssaiavailability/v1/nssai-availability/{nfId}",
-        ":method": "DELETE",
-        "Content-Type": "application/JSON",
-        "network-info":{
-            "nfId": "string"
-        }
-      },
-      {
         ":path": "{apiRoot}/nnssf-nssaiavailability/v1/nssai-availability/subscriptions/{subscriptionId}",
         ":method": "DELETE",
         "Content-Type": "application/JSON",
